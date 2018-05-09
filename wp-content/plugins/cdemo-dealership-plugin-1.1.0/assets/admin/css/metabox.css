@@ -1,0 +1,529 @@
+
+.row-table {
+    display: table;
+}
+
+.row-table .row-table-cell {
+    display: table-cell;
+}
+
+@media (min-width: 768px) {
+
+    .pull-left {
+        float: left;
+    }
+
+    .pull-right {
+        float: right;
+    }
+
+}
+
+/*<editor-fold desc="Tabs">*/
+.cdemo-tabs {
+    width: 100%;
+}
+
+.cdemo-tabs {
+    overflow: hidden;
+    position: relative;
+}
+
+.cdemo-tabs ul.ui-tabs-nav {
+    float: left;
+    width: 15%;
+    margin: 0;
+    padding: 0 0 10px;
+    background: #fafafa;
+    position: relative;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.cdemo-tabs ul.ui-tabs-nav:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 9999em;
+    position: absolute;
+    bottom: -9999em;
+    left: 0;
+    background-color: #fafafa;
+    border-right: 1px solid #eee;
+}
+
+.cdemo-tabs .ui-tabs-nav li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cdemo-tabs .ui-tabs-nav li a .dashicons {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cdemo-tabs .ui-tabs-nav li {
+    clear: left;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.cdemo-tabs .ui-tabs-nav li .title {
+    display: none;
+}
+
+.cdemo-tabs .ui-tabs-panel {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 85%;
+    min-height: 200px;
+}
+
+.cdemo-tabs .ui-tabs-nav li.ui-tabs-active {
+    background: #efefef;
+}
+
+.cdemo-tabs .ui-tabs-nav li.ui-tabs-active a {
+    color: #414141;
+}
+
+
+@media(min-width: 1170px) {
+
+    .cdemo-tabs ul.ui-tabs-nav {
+        width: 20%;
+    }
+
+    .cdemo-tabs .ui-tabs-panel {
+        width: 80%;
+    }
+
+    .cdemo-tabs .ui-tabs-nav li .title {
+        display: inline;
+    }
+
+    .cdemo-tabs .ui-tabs-nav li a {
+        text-align: left;
+    }
+
+    .cdemo-tabs .ui-tabs-nav li a .dashicons {
+        margin-right: 5px;
+    }
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Meta Field Locks">*/
+input[type=checkbox].cdemo-metafield-lock {
+    display: none;
+}
+
+
+input[type=checkbox].cdemo-metafield-lock + label {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+input[type=checkbox].cdemo-metafield-lock + label:before {
+    font-family: dashicons;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+input[type=checkbox].cdemo-metafield-lock + label:before {
+    content: "\f528";
+    color: #888888;
+}
+
+input[type=checkbox].cdemo-metafield-lock:checked + label:before {
+    content: "\f160";
+    color: #000;
+}
+
+.cdemo-metabox .field-lock {
+    display: none;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Meta Fields">*/
+
+.cdemo-metabox .metabox-group {
+    border-bottom: 1px solid #eee;
+}
+
+.cdemo-metabox .metabox-section .metabox-group:last-of-type {
+    border-bottom: none;
+}
+
+.cdemo-metabox .form-field {
+    padding: 5px 20px;
+    line-height: 24px;
+    margin: 8px 0;
+}
+
+.cdemo-metabox .form-field:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.cdemo-metabox .form-field .label {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.cdemo-metabox .form-field .meta-field {
+    width: 100% !important;
+}
+
+.cdemo-metabox .input-group {
+    display: table;
+    position: relative;
+    width: 100%;
+    border-collapse: separate;
+}
+
+.cdemo-metabox .input-group,
+.cdemo-metabox .input-group > * {
+    box-sizing: border-box;
+}
+
+.cdemo-metabox .form-field .input-group .input-group-addon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-right: 0;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+}
+
+.cdemo-metabox .form-field .input-group .meta-field {
+    display: table-cell;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.cdemo-metabox .cdemo-range-input.meta-field {
+    padding: 0 !important;
+    width: auto !important;
+}
+
+.cdemo-metabox .cdemo-range-input.meta-field input {
+    width: 100% !important;
+    margin: 0;
+}
+
+#cdemo-finance-price-preview {
+    margin-top: 10px;
+    width: 100%;
+    height: 28px;
+}
+
+#cdemo-financing-disclaimer {
+    min-height: 60px;
+    vertical-align: middle;
+}
+
+#cdemo-calc-payments {
+    width: 100%;
+}
+
+.enable_financing .input-group .input-group-addon {
+    border-right: 1px solid #ddd !important;
+    padding: 0 10px !important;
+}
+
+
+@media(min-width: 768px) {
+
+    .cdemo-metabox .cdemo-range-input.meta-field input {
+        width: 49% !important;
+    }
+
+    .cdemo-metabox .cdemo-range-input.meta-field input:last-of-type {
+        float: right;
+    }
+
+    #cdemo-calc-payments {
+        width: auto;
+    }
+
+    #cdemo-finance-price-preview {
+        float: right;
+    }
+
+    .cdemo-metabox .form-field {
+        padding: 5px 20px 5px 162px;
+    }
+
+    .cdemo-metabox .form-field.feature-section {
+        padding: 5px 20px;
+    }
+
+    .cdemo-metabox .form-field .label {
+        margin: 0 0 0 -150px;
+        width: 150px;
+        float: left;
+    }
+
+    .cdemo-metabox .field-lock {
+        display: inline;
+    }
+
+    #cdemo-finance-price-field .pull-right,
+    #cdemo-finance-price-field .pull-left {
+        width: 49%;
+    }
+
+    #cdemo-finance-price-field .input-group {
+        max-width: 100% !important;
+    }
+
+    #cdemo-financing-price {
+        width: 100%;
+    }
+
+    #cdemo-finance-price-preview {
+        margin: 0;
+    }
+
+}
+
+
+@media(min-width: 1600px) {
+
+    .cdemo-metabox .form-field .meta-field,
+    .cdemo-metabox .form-field .input-group {
+        max-width: 60% !important;
+    }
+
+    .cdemo-metabox .form-field .input-group .meta-field {
+        max-width: 100% !important;
+    }
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Media">*/
+.cdemo-media {
+    padding: 2%;
+}
+
+.cdemo-media ul {
+    width: 100%;
+    margin: 0 2%;
+}
+
+.cdemo-media li.add-media {
+    background: #efefef;
+    display: table;
+}
+
+.cdemo-media .add-media .upload-label {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #a0a5aa;
+}
+
+.cdemo-media li {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    float: left;
+    margin: 5px;
+    display: table;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+}
+
+.cdemo-media li.sortable .remove {
+    position: absolute;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin-top: -8px;
+    margin-left: -8px;
+    background: #dd3f07;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 1;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.cdemo-media li.sortable:hover > .remove {
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+}
+
+.cdemo-media .media-thumbnail {
+    width: 100%;
+    height: auto;
+    display: table-cell;
+    vertical-align: middle;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    transition: filter 0.5s;
+}
+
+.cdemo-media li.sortable:hover .media-thumbnail {
+    filter: brightness(0.8);
+}
+
+@media(min-width: 768px) {
+
+    .cdemo-media li {
+        width: calc(100% / 4 - 20px);
+
+    }
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Features">*/
+.feature-section {
+    margin: auto !important;
+}
+
+.feature-section .feature-section-title {
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.feature-section .feature-section-title .toggle {
+    float: right;
+    font: 400 20px/1 dashicons;
+    color: #666;
+    display: none;
+    width: 10px;
+    height: 10px;
+}
+
+.feature-section .feature-section-title:hover > .toggle {
+    display: inline-block;
+}
+
+.feature-section .feature-section-title .toggle:before {
+    content: "\f140";
+}
+
+.feature-section .feature-section-title.expanded .toggle:before {
+    content: "\f142";
+}
+
+.feature-section .add-feature input {
+    width: 100%;
+}
+
+.feature-section .add-feature button {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.feature-section {
+    padding: 0 20px !important;
+}
+
+.feature-section .features-wrap {
+    border-top: 1px solid #eee;
+    margin: 0 -20px;
+    padding: 10px 20px;
+    background: #fdfdfd;
+}
+
+.feature-section .feature {
+    margin: 5px auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+
+.feature-section .feature .inner {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 130px;
+    height: 100%;
+    display: inline-block;
+}
+
+.feature-section .feature input {
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    top: -2px;
+    position: relative;
+}
+
+.feature-section .feature .remove-feature {
+    float: right;
+    display: none;
+    color: #666;
+    text-decoration: none;
+}
+
+.feature-section .feature .remove-feature span {
+    vertical-align: middle;
+    margin: 0 0 4px 0;
+}
+
+.feature-section .feature label {
+    top: -1px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.feature-section .feature:hover > .remove-feature {
+    display: inline-block;
+}
+
+@media(min-width: 767px) {
+
+    .feature-section .add-feature {
+        line-height: 40px;
+        min-width: 90%;
+    }
+
+    .feature-section .add-feature input {
+        width: 60%;
+        vertical-align: middle;
+    }
+
+    .feature-section .add-feature button {
+        width: auto;
+        vertical-align: middle;
+    }
+
+    .feature-section .feature {
+        margin: 0;
+        width: 60%;
+    }
+
+    .feature-section .feature .inner {
+        width: 70%;
+    }
+
+}
+/*</editor-fold>*/
+

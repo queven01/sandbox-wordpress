@@ -1,0 +1,1221 @@
+/*<editor-fold desc="Utility Classes">*/
+.v-center-table {
+    display: table;
+    width: 100%;
+}
+
+.v-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
+
+
+/*</editor-fold>*/
+
+/*--- cDemo Global Defaults ---*/
+/*<editor-fold desc="Page Content">*/
+#cdemo {
+    background: #f8f8f8 !important;
+    font-size: 14px !important;
+}
+
+#cdemo .content {
+    border-bottom: 1px solid #ddd;
+}
+
+#cdemo .wrapper {
+    font-size: 14px;
+    background: #fff;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+#cdemo .ui-state-active, .ui-widget-content .ui-state-active {
+    border: none;
+}
+
+#cdemo .ui-state-default, .ui-widget-content .ui-state-default,
+#cdemo .ui-state-active,  .ui-widget-content .ui-state-active {
+    border: none;
+}
+
+#cdemo .ui-widget.ui-widget-content {
+    background: #e8e8e8;
+    border: none;
+}
+
+#cdemo .ui-slider .ui-slider-range {
+    background: #afaeae;
+    border: 1px solid #afaeae;
+}
+
+#cdemo .ui-slider {
+    margin: auto 10px;
+    border: none;
+}
+
+#cdemo .ui-slider-handle {
+    margin-top: 1px;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Header Navbar">*/
+#cdemo .navbar {
+    border-radius: 0;
+}
+
+#cdemo .navbar .wrapper {
+    height: 50px;
+}
+
+#cdemo .navbar-logo {
+    height: 40px;
+}
+
+#cdemo .navbar-header {
+    height: 50px;
+    padding: 0 15px;
+}
+
+#cdemo .navbar-brand  {
+    padding: 0;
+}
+
+#cdemo .navbar .v-center-table {
+    height: 100%;
+    width: auto;
+    display: inline-table;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Footer Navbar">*/
+#cdemo .footer .navbar {
+    border: none;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#cdemo .footer-left .navbar {
+    text-align: center;
+}
+
+#cdemo .footer-left .copyright {
+    float: none;
+}
+
+#cdemo .footer-right .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+#cdemo .footer-right .menu-footer-container {
+    height: 50px;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Tables">*/
+#cdemo table tr,
+#cdemo table th,
+#cdemo table td {
+    border: none;
+}
+
+#cdemo table th {
+    font-weight: normal;
+}
+
+#cdemo .datepicker .prev,
+#cdemo .datepicker .next {
+    padding: 0;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Buttons">*/
+#cdemo .btn,
+#cdemo a {
+    transition: all 0.5s;
+}
+
+
+#cdemo .btn-primary {
+    border: none;
+}
+/*</editor-fold>*/
+
+/**-- Vehicle Details Page --**/
+/*<editor-fold desc="Gallery">*/
+.lSSlideOuter .lSPager.lSGallery li {
+    transition: all 0.5s;
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active,
+.lSSlideOuter .lSPager.lSGallery li:hover {
+    border-radius: 0;
+    filter: brightness(0.6);
+}
+
+.lg-outer .lg-thumb-outer.lg-grab .lg-thumb-item {
+    border-radius: 0;
+    border: none;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="VDP Global">*/
+.cdemo-vdp section {
+    padding: 20px 0;
+}
+
+.cdemo-vdp .listing-title {
+    font-size: 24px;
+    margin: 30px 0;
+    font-weight: 400;
+}
+
+.cdemo-vdp .panel-heading .glyphicon {
+    margin: 4px;
+}
+
+.cdemo-vdp .panel-heading a:after {
+    display: inline-block;
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.cdemo-vdp .panel-heading a:active {
+    outline: none;
+}
+
+.cdemo-vdp .panel-heading a.collapsed:after {
+    transform: rotate(-90deg);
+}
+
+.cdemo-vdp .gallery {
+    margin-bottom: 30px;
+}
+
+.cdemo-vdp .panel-heading p {
+    margin: 0 auto;
+}
+
+.cdemo-vdp .panel table {
+    width: 100%;
+}
+
+.cdemo-vdp .panel th,
+.cdemo-vdp .panel td {
+    padding: 10px;
+}
+
+.cdemo-vdp .panel th {
+    width: 50%;
+}
+
+.cdemo-vdp .panel tr:last-of-type > th,
+.cdemo-vdp .panel tr:last-of-type > td {
+    border-bottom: none !important;
+}
+
+
+
+@media(min-width: 767px) {
+
+    .cdemo-vdp .tab-pane {
+        display: none;
+    }
+
+    .cdemo-vdp .tab-pane.active {
+        display: block;
+    }
+
+    .cdemo-vdp .panel th,
+    .cdemo-vdp .panel td {
+        padding: 10px;
+    }
+
+    .cdemo-vdp .panel th {
+        width: 50%;
+    }
+
+    .cdemo-vdp .panel th {
+        width: 30%;
+    }
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Contact Form">*/
+.cdemo-vdp .contact-form-default .panel {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.cdemo-vdp .contact-form-default .panel-heading a {
+    text-decoration: none;
+    display: block;
+}
+
+.cdemo-vdp .contact-form-default .comments {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.cdemo-vdp .contact-form-default .date input {
+    font-size: 12px;
+}
+
+.cdemo-vdp .contact-form-default label {
+    display: block;
+    width: 100%;
+}
+
+.cdemo-vdp .contact-form-default textarea,
+.cdemo-vdp .contact-form-default input[type=tel],
+.cdemo-vdp .contact-form-default input[type=text],
+.cdemo-vdp .contact-form-default input[type=email] {
+    padding: 5px 8px;
+}
+
+.cdemo-vdp .contact-form-default .submit {
+    width: 100%;
+}
+
+.cdemo-vdp .contact-form-default form {
+    padding: 0 10px;
+}
+
+.cdemo-vdp .contact-form-default .request-conformation {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.cdemo-vdp .contact-form-default .char-count {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.cdemo-vdp .contact-form-gforms button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media(min-width: 767px) {
+
+    .cdemo-vdp .contact-form-default .comments {
+        min-height: 100px;
+    }
+
+}
+
+@media(min-width: 769px) {
+
+    .cdemo-vdp .contact-form-default .panel-body {
+        padding: 15px 10px;
+    }
+
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="GForm Modal">*/
+.cdemo-gform-modal {
+    z-index: 99999;
+    display: none;
+}
+
+.cdemo-gform-modal .modal-header .modal-title {
+    display: inline-block;
+}
+
+.cdemo-gform-modal .gform_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cdemo-gform-modal .gform_footer {
+    max-width: 98%;
+    text-align: right;
+}
+
+.cdemo-gform-modal input[type=submit] {
+    width: 100%;
+    border: none;
+}
+
+@media(min-width: 767px) {
+
+    .cdemo-gform-modal input[type=submit] {
+        width: 200px;
+    }
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Pricing">*/
+.cdemo-vdp .pricing .price-block {
+    margin: 15px auto;
+    height: 20px;
+}
+
+.cdemo-vdp .pricing .price-title {
+    display: inline-block;
+    margin: 0;
+}
+
+.cdemo-vdp .pricing .price {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Fuel Economy">*/
+.cdemo-vdp .fuel-efficiency {
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.cdemo-vdp .fuel-efficiency p {
+    margin: 0;
+}
+
+.cdemo-vdp .fuel-efficiency span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.cdemo-vdp .fuel-efficiency .media-object {
+    height: 48px;
+    max-width: initial;
+    opacity: 0.6;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Specification Section">*/
+.cdemo-vdp .specs {
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.cdemo-vdp .specs h3 {
+    margin: 0 auto 15px auto;
+}
+
+.cdemo-vdp .specs .spec-table tr th {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+
+    .cdemo-vdp .specs {
+        margin-top: 0;
+    }
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Description Section">*/
+.cdemo-vdp .description-section {
+    font-size: 16px;
+    padding: 40px 0 20px 0;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Details Section">*/
+.cdemo-vdp .details-section .panel-primary .list-group {
+    border: none;
+}
+
+.cdemo-vdp .details-section .panel-primary .list-group-item:first-child {
+    border-top: none !important;
+}
+
+.cdemo-vdp .details-section .panel-heading a {
+    text-decoration: none;
+}
+
+#feature-sections {
+    margin-bottom: 0;
+}
+
+
+/*.cdemo-vdp .details-section {*/
+    /*margin: 15px auto;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .title-bar h2 {*/
+    /*margin: 0;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .title-bar .nav {*/
+    /*display: none;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .tabs a {*/
+    /*outline: none;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .tabs-content {*/
+    /*margin: 10px auto;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .tab-pane {*/
+    /*margin: 10px auto;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .panel-heading a {*/
+    /*text-decoration: none;*/
+    /*color: #fff;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .panel-heading .glyphicon {*/
+    /*margin: 4px;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .panel-heading a:after {*/
+    /*display: inline-block;*/
+    /*font-family:'Glyphicons Halflings';*/
+    /*content:"\e114";*/
+    /*float: right;*/
+    /*text-align: center;*/
+    /*transition: transform 0.2s;*/
+/*}*/
+
+/*.cdemo-vdp .details-section .panel-heading a.collapsed:after {*/
+    /*transform: rotate(-90deg);*/
+/*}*/
+
+/*.cdemo-vdp .details-section ul {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-size: 14px;*/
+    /*list-style-position: inside;*/
+/*}*/
+
+
+/*@media(max-width: 767px) {*/
+
+    /*.cdemo-vdp .details-section .tab-pane {*/
+        /*opacity: 1;*/
+    /*}*/
+
+/*}*/
+
+/*@media(min-width: 767px) {*/
+
+    /*.cdemo-vdp .details-section .title-bar .nav {*/
+        /*display: block;*/
+    /*}*/
+
+    /*.cdemo-vdp .details-section .panel-heading {*/
+        /*display: none;*/
+    /*}*/
+
+    /*.cdemo-vdp .details-section .collapse {*/
+        /*display: block;*/
+    /*}*/
+
+    /*.cdemo-vdp .details-section .title-bar h2 {*/
+        /*height: 40px;*/
+        /*line-height: 40px;*/
+    /*}*/
+
+/*}*/
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Relatives Section">*/
+.cdemo-vdp .relatives-section {
+    padding: 20px 0;
+}
+
+.cdemo-vdp .relatives-section h4 {
+    height: 32px;
+    margin-bottom: 15px;
+}
+
+.cdemo-vdp .relatives-section .view-all-link {
+    display: none;
+    text-decoration: none;
+}
+
+.cdemo-vdp .relatives-section .view-more-link {
+    float: right;
+    margin-left: 10px;
+}
+
+@media(min-width: 767px) {
+    .cdemo-carousel .owl-nav {
+        position: absolute;
+        top: -50px;
+        right: 0;
+
+    }    
+}
+
+@media(min-width: 767px) {
+
+    .cdemo-vdp .relatives-section .view-all-link {
+        display: inline;
+    }
+
+    .cdemo-vdp .relatives-section .view-more-link {
+        float: none;
+    }
+
+}
+/*</editor-fold>*/
+
+/**-- Search Page --**/
+/*<editor-fold desc="Search Form">*/
+.cdemo-search-form {
+/*    padding: 20px;*/
+}
+
+#cdemo-search-box {
+    margin-bottom: 10px;
+}
+
+#cdemo-search-box .btn.btn-default:hover {
+    background-color: #afaeae;
+}
+
+.cdemo-search-form .label,
+.cdemo-search-form .radio-label {
+    font-size: 14px;
+}
+
+form#cdemo-advanced-search-form .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.cdemo-search-form .search-submit {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cdemo-search-form fieldset {
+    border: none;
+}
+
+.cdemo-search-form .radio-label {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 200;
+}
+
+.cdemo-search-form input[type=radio] {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.cdemo-search-form .cdemo-price.min {
+    margin-bottom: 10px;
+}
+
+.cdemo-search-form .search-submit {
+    margin: 0;
+}
+
+.cdemo-search-form .ui-slider-handle {
+    border-radius: 100%;
+}
+
+form#cdemo-advanced-search-form label {
+    text-transform: uppercase;
+    font-size: 11px;
+    vertical-align: bottom;
+    display: block;
+    letter-spacing: .05em;
+    color: #666;
+}
+
+form#cdemo-search-box input.form-control {
+    padding: 0px 15px;
+    box-shadow: none;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: #f8f8f8;
+    background-image: none;
+    border: none;
+    color: #1c1c1c;
+    border-radius: 0px;
+    font-size: 12px;
+    line-height: 40px;
+    height: 40px;
+}
+
+form#cdemo-search-box button.btn {
+    border: none;
+    background: #f8f8f8;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    padding: 0;
+    border-radius: 0;
+    border-left: thin solid #ffffff;
+}
+
+form#cdemo-advanced-search-form .checkbox-group {
+    padding: 15px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: #f8f8f8;
+    background-image: none;
+    border: none;
+    color: #1c1c1c;
+    border-radius: 0px;
+    font-size: 12px;
+}
+
+form#cdemo-advanced-search-form label.for-checkbox {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+
+form#cdemo-advanced-search-form .checkbox-group .for-checkbox:last-child {
+    margin-bottom: 0;
+}
+
+
+#cdemo-search-toggle {
+    visibility: hidden;
+    position: absolute;
+    right: 10000px;
+}
+
+#cdemo-search-open {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+    background: #fff;
+    position: fixed;
+    top: 35%;
+    cursor: pointer;
+
+}
+
+#cdemo-search-close {
+    color: #666;
+    font-weight: 200;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cdemo-search-form .range-display {
+    margin: 5px 2px 0 2px;
+    color: #666;
+
+}
+
+#cdemo-search-results {
+    margin-top: 20px;
+}
+
+@media(max-width: 767px) {
+
+    body.has-admin-bar div#cdemo-search-form {
+        margin-top: 46px;
+    }
+
+    #cdemo-search-toggle:checked ~ #cdemo-search-form {
+        left: 0;
+    }
+
+    div#cdemo-search-form {
+        overflow: scroll;
+        position: fixed;
+        background: #fff;
+        z-index: 999999;
+        width: 100%;
+        padding: 15px;
+        top: 0;
+        left: -100%;
+        right: 0;
+        bottom: 0;
+        transition: left cubic-bezier(.74,.49,.11,.97) 0.5s;
+    }
+
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="View Controls">*/
+#cdemo-search-view-controls .left .search-view-control {
+    display: inline;
+    width: auto;
+}
+
+#cdemo-search-view-controls .left,
+#cdemo-search-view-controls .right {
+    width: 100%;
+}
+
+#cdemo-search-view-controls .per-page .label {
+/*    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    color: #777;
+    vertical-align: bottom;
+    display: block; */
+    text-transform: uppercase;
+    font-size: 11px;
+    vertical-align: bottom;
+    display: block;
+    letter-spacing: .05em;
+    color: #666;
+}
+
+
+/*--- Results ---*/
+
+.cdemo-search-results .pagination {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.cdemo-search-results .pagination a.page-numbers:focus,
+.cdemo-search-results .pagination a.page-numbers:hover {
+    text-decoration: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    background-color: #eee;
+    color: #000;
+}
+
+.cdemo-search-results .pagination .page-numbers {
+    font-size: 12px;
+    font-weight: normal;
+    transition: none;
+    background-color: #fff;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    outline: none;
+}
+
+.cdemo-search-results .pagination .page-numbers.current {
+    border: 1px solid #337ab7;
+    background: #337ab7;
+    color: #fff;
+    z-index: 2;
+}
+
+.cdemo-search-results .pagination .prev.page-numbers {
+    border-radius: 4px 0 0 4px;
+}
+
+.cdemo-search-results .pagination .next.page-numbers {
+    border-radius: 0 4px 4px 0;
+}
+
+div#cdemo-search-view-controls .pull-right {
+    padding-right: 40px;
+    width: 100%;
+    position: relative;
+}
+
+div#cdemo-search-view-controls .input-group-btn {
+    vertical-align: top;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Single Result">*/
+.cdemo-search-result {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cdemo-search-result {
+    position: relative;
+}
+
+.cdemo-search-result .item-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+}
+
+.cdemo-search-result .item-price {
+    margin-top: 40px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+
+.cdemo-search-result .item-price h5 {
+    font-size: 16px;
+    text-align: right;
+    color: #fff;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 6px 12px 6px 20px;
+}
+
+.cdemo-search-result .listing-price.has-promo .regular-price {
+    color: #a6a6a6;
+    font-size: 12px;
+}
+
+.cdemo-search-result .item-price h5 > span {
+    display: block;
+}
+
+
+.cdemo-search-result .item-title {
+    padding: 10px 0;
+}
+
+.cdemo-search-result .item-title a:hover {
+    text-decoration: none;
+}
+
+.cdemo-search-result .thumbnail img:hover {
+    filter: brightness(0.8);
+}
+
+.cdemo-search-result .thumbnail img {
+    max-width: 100%;
+    margin: 30px 0 15px;
+    padding: 0;
+    border-radius: 0px;
+    background: #ededed;
+    border-color: #f0f0f0;
+}
+
+.cdemo-search-result .details {
+    margin: 15px auto;
+}
+
+.cdemo-search-result .details .mobile-hide {
+    display: none;
+}
+
+.cdemo-search-result .details-table td.detail {
+    border-right: thin solid #f0f0f0 !important;
+    padding: 8px 10px 5px 10px;
+}
+
+.cdemo-search-result .details > .details-table tr {
+    border-top: none !important;
+}
+
+.cdemo-search-result .details-table tr  {
+    border-top: thin solid #f0f0f0 !important;
+}
+
+.cdemo-search-result .details-table tr td.detail:last-child {
+    border-right: none !important;
+}
+
+.cdemo-search-result .details-table td.detail:first-child {
+    padding-left: 0;
+}
+
+.cdemo-search-result .callouts {
+    margin: 10px auto;
+}
+
+.cdemo-search-result .callouts .cta {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.cdemo-search-result .identification {
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.cdemo-search-result .identification .number {
+    display: block;
+}
+
+.cdemo-search-result .identification > span.number {
+    display: block;
+}
+
+.cdemo-search-result .identification > span.number .label {
+    display: block;
+}
+
+.cdemo-search-result .identification .number .label {
+    display: inline-block;
+}
+
+.cdemo-search-result .identification > span.number .value {
+    font-size: 14px;
+    font-weight: 600;    
+}
+
+.cdemo-search-result .identification .label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.cdemo-search-result .stock-no {
+    margin-right: 10px;
+}
+
+.cdemo-search-result .details .show-link a {
+    text-decoration: none;
+}
+
+.cdemo-search-result .details-table {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.cdemo-search-result .details-table th {
+    min-width: 60px;
+}
+
+.cdemo-search-result .details-table th,
+.cdemo-search-result .details-table td {
+    text-align: left;
+}
+
+.cdemo-search-result .details-table .detail .label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.cdemo-search-result .details-table .detail .value {
+    font-weight: 600;
+}
+
+.cdemo-search-result .blurb {
+/*    border-top: thin solid #f0f0f0;
+    padding: 15px 0 0;*/
+}
+
+@media(min-width: 767px) {
+
+
+    .cdemo-search-result .details .mobile-hide {
+        display: block;
+    }
+
+    .cdemo-search-result .details .show-link {
+        display: none;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+    .cdemo-search-result .identification .number .label {
+        width: auto;
+        display: inline-block;
+    }
+
+}
+
+@media(min-width: 1200px) {
+
+    .cdemo-search-result .item-price {
+        position: relative;
+        margin: 15px 15px 0 15px;
+    }
+
+    .cdemo-search-result .item-price .listing-price {
+        float: right;
+    }
+
+    .cdemo-search-result .item-title {
+        margin-top: 0;
+    }
+
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Custom Select Options">*/
+
+div#cdemo-search-view-controls .input-group-btn {
+    vertical-align: top;
+}
+
+div#cdemo-search-view-controls .input-group-btn button {
+    border: none;
+    background: #f8f8f8;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    padding: 0;
+    border-radius: 0;
+    border-left: thin solid #ffffff;
+}
+
+div#cdemo-search-view-controls .input-group-btn button:hover {
+    background-color: #e0e0e0;
+}
+
+div#cdemo-search-view-controls .input-group-btn button:active,
+div#cdemo-search-view-controls .input-group-btn button:focus {
+    background-color: #d6d6d6;
+    outline: none !important;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Selectize">*/
+.selectize-input {
+    padding: 0px 15px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: #f8f8f8;
+    background-image: none;
+    border: none;
+    color: #1c1c1c;
+    border-radius: 0px;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.selectize-input.has-options {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0px 15px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: #f8f8f8;
+    background-image: none;
+    border: none;
+    color: #1c1c1c;
+    border-radius: 0px;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.selectize-input:hover {
+    background-color: #e8e8e8;
+}
+
+.selectize-input.has-options:hover {
+    background-color: #f8f8f8;
+}
+
+#cdemo select[data-selectize], input.select-multiple {
+    visibility: hidden;
+}
+
+.selectize-input.input-active {
+    background-color: #e8e8e8 !important;
+}
+
+.selectize-input.input-active.has-options {
+    background-color: #f8f8f8 !important;
+}
+
+.selectize-input.focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.selectize-input:focus {
+    outline: none !important;
+}
+
+.selectize-dropdown-content {
+    padding: 0;
+}
+
+.selectize-dropdown, .selectize-dropdown.form-control {
+    border-radius: 0;
+    margin: 0;
+}
+
+.selectize-dropdown-content > .option {
+    margin: 0;
+    padding: 5px 0;
+    text-indent: 15px;
+    border-top: 1px solid #d6d6d6;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+    color: #777;
+    border-radius: 0px;
+    font-size: 12px;
+}
+.selectize-control.multi .selectize-input {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.selectize-control.multi .selectize-input > div {
+    padding: 0 10px !important;
+    background: none;
+    border: thin solid #cacaca;
+    height: 30px;
+    width: 100%;
+    border-radius: 0;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+div.selectize-input.has-items.not-full > input[type=text] {
+    padding: 0 5px !important;
+     width: 100% !important;
+    opacity: 1 !important;
+    position: relative !important;
+    left: 0 !important;
+}
+
+.selectize-control.multi .selectize-input > div.item .remove {
+    color: #555 !important;
+    width: 25px !important;
+}
+
+.selectize-control.multi .selectize-input > div.item {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 25px !important;
+    margin-top: 10px;
+}
+
+/*</editor-fold>*/

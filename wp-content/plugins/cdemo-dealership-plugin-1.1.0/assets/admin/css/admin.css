@@ -1,0 +1,454 @@
+
+/*<editor-fold desc="Global">*/
+#toplevel_page_cdemo .wp-menu-image img {
+    height: 20px;
+}
+
+.postbox[id^="cdemo-"] .inside {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.cdemo-help {
+    cursor: help;
+    background: #666;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 50%;
+    margin: auto 2px;
+}
+
+.cdemo-help:before {
+    content: '?';
+}
+
+.small {
+    font-size: 12px;
+}
+
+.cdemo_page_cdemo-settings .wrap.cdemo-admin-page {
+    margin: -20px 0 0 -20px;
+    padding-top: 20px;
+    background: #f9f9f9;
+}
+
+.wrap.cdemo-admin-page .nav-tab-wrapper{
+    padding: 9px 10px 0px 20px !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+.wrap.cdemo-admin-page .nav-tab {
+    padding: 10px 15px;
+    margin: 0 0 -1px -1px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.wrap.cdemo-admin-page .nav-tab.nav-tab-active{
+    border-bottom: 1px solid #F1F1F1 !important;
+    background: #F1F1F1;
+}
+
+.wrap.cdemo-admin-page .nav-tab,
+.wrap.cdemo-admin-page .nav-tab:active,
+.wrap.cdemo-admin-page .nav-tab:focus{
+    box-shadow: none;
+}
+
+.wrap.cdemo-admin-page .tabs-content {
+    background: #f1f1f1;
+}
+
+#cdemo-settings-wrapper{
+    background: #f1f1f1;
+    padding: 15px 10px 0 20px;
+}
+
+@media( min-width: 768px ) {
+    .tabs-content {
+        width: 65%;
+        display: inline-block;        
+    }
+    .cdemo-admin-sidebar {
+        width: 30%;
+        display: inline-block;
+        float: right;
+        margin: 0 10px 15px 10px
+    }
+
+}
+
+
+.wrap.cdemo-admin-page .form-table {
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.wrap.cdemo-admin-page .tabs-content h2{
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.wrap.cdemo-admin-page .notice {
+    margin: 0 15px;
+}
+
+#cdemo-favicon img {
+   max-width: 25px
+}
+
+.cdemo-admin-page .form-table td.has-media-uploader {
+    text-align: left;
+}
+
+.cdemo-admin-page .form-table td {
+    padding: 15px;
+}
+
+.cdemo-admin-page .form-table th {
+    font-size: 14px;
+}
+
+.form-table .regular-text {
+    width: 25em !important;
+}
+
+.tabs-content {
+    
+}
+
+.cdemo-admin-page .form-table th {
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+}
+
+.cdemo-admin-page .form-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.cdemo-admin-page .form-table .regular-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 7px 10px;
+    display: block;
+    max-width: none;
+    outline: none;
+    transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+}
+
+@media (min-width: 768px) {
+    .cdemo-admin-page .form-table .regular-text {
+        width: 25em !important;
+    }
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="New Listing Menu Page">*/
+.cdemo-new-listing .wrapper {
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 15px 0;
+}
+
+.cdemo-new-listing .wrapper h3 {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cdemo-new-listing .wrapper .inside {
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.cdemo-new-listing ul {
+    margin: 0;
+}
+
+.cdemo-new-listing ul li {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.cdemo-new-listing ul li a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    background: #e1e1e1;
+    margin: 10px;
+    transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+}
+
+.cdemo-new-listing ul li a:hover{
+    box-shadow: 1px 2px 4px #e1e1e1;
+}
+
+.cdemo-new-listing ul li .post-type-label {
+    margin: 0;
+    text-align: center;
+    border: none;
+}
+
+.cdemo-new-listing ul li .listing-icon {
+    font-size: 42px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width: 40px;
+    height: 40px;
+}
+
+.cdemo-new-listing ul li .listing-icon.post-type-atv {
+    background-image: url('../images/atv-icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.cdemo-new-listing ul li .listing-icon.post-type-automobile {
+    background-image: url('../images/car-icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.cdemo-new-listing ul li .listing-icon.post-type-motorcycle {
+    background-image: url('../images/moto-icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.cdemo-new-listing ul li .listing-icon.post-type-snowmobile {
+    background-image: url('../images/snowmobile-icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.cdemo-new-listing ul li .listing-icon.post-type-camper {
+    background-image: url('../images/camper-van-icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+}
+
+.cdemo-new-listing ul li .listing-icon.post-type-boat {
+    background-image: url('../images/sea-ship-icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.cdemo-new-listing ul li .listing-icon.post-type-trailer {
+    background-image: url('../images/trailer-icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+@media(min-width: 767px) {
+
+    .cdemo-new-listing .wrapper .inside {
+        display: table;
+        width: 75%;
+    }
+
+    .cdemo-new-listing ul li {
+        width: 42%;
+        height: 100px;
+        margin: 15px;
+    }
+
+}
+
+@media(min-width: 992px) {
+
+    .cdemo-new-listing ul li {
+        width: 40%;
+        margin: 0 15px 15px 0;
+    }
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Settings">*/
+#cdemo-post-types h4 {
+    margin: 10px auto 0 auto;
+}
+
+#cdemo-post-types label {
+    padding-right: 10px;
+    font-style: italic;
+    color: #676767;
+}
+
+#cdemo-gf-forms-config li {
+    max-width: 768px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #f6f5f6;
+    margin-bottom: 10px;
+}
+
+#cdemo-gf-forms-config li .inner {
+    padding: 10px 20px;
+}
+
+#cdemo-gf-forms-config li p {
+    margin: 10px auto;
+}
+
+#cdemo-gf-forms-config li .description {
+    display: block;
+    margin: 5px 0;
+    color: #676767;
+}
+
+#cdemo-gf-forms-config li .header {
+    width: 100%;
+    display: block;
+    font-style: italic;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
+    margin: 0;
+    color: #72777c;
+}
+
+li.cdemo-gf-form-config .header {
+    text-align: right;
+}
+
+#cdemo-gf-forms-config li .header a {
+    text-decoration: none;
+    padding: 5px;
+    color: #72777c;
+}
+
+#cdemo-gf-forms-config li label {
+    width: 100px;
+    display: inline-block;
+    padding-right: 10px;
+    font-style: italic;
+    color: #676767;
+    vertical-align: top;
+}
+
+#cdemo-gf-forms-config li input[readonly] {
+    background: #fff;
+    font-family: monospace, monospace;
+    width: 100%;
+}
+
+#cdemo-gf-forms-config li .regular-text {
+    width: 100% !important;
+}
+
+#cdemo-add-form-submit {
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media(min-width: 767px) {
+
+    #cdemo-add-form-submit {
+        width: auto;
+        margin-top: 15px;
+        padding: 0 20px;
+    }
+
+    #cdemo-gf-forms-config li span.regular-text {
+        width: 25em !important;
+    }
+
+}
+
+#wp-cdemo-gf-contact-form-html-wrap,
+#wp-cdemo_contact_email-wrap {
+    max-width: 768px;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="settings-header">*/
+
+#cdemo-header-wrapper {
+    margin: 10px 10px 0 20px;
+    padding: 10px 0;
+}
+
+.cdemo-table{
+    display: table-cell;
+}
+
+.cdemo-table > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cdemo-logo img{
+    height: 50px;
+}
+
+.cdemo-title {
+    font-size: 32px;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+.cdemo-links li {
+    display: inline;
+}
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="settings-sidebar">*/
+.cdemo-sidebar-widget {
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.cdemo-sidebar-widget .widget-header {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.cdemo-sidebar-widget .widget-header h3 {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    line-height: 36px;
+}
+
+.cdemo-sidebar-widget .widget-header .button-cta {
+    margin: 4px auto;
+}
+
+.cdemo-sidebar-widget .widget-header .dashicons {
+    line-height: 36px;
+}
+
+.cdemo-sidebar-widget .widget-header .label {
+    border: 1px solid #ddd;
+    padding: 2px 5px;
+    background: #fff;
+    margin: 0 5px;
+}
+
+.cdemo-sidebar-widget .widget-content {
+    padding: 10px 15px;
+}
+/*</editor-fold>*/

@@ -1,0 +1,23 @@
+body {
+    background-color: #e1e1e1;
+    margin: 65px auto 24px;
+    max-width: 700px;
+    color: #666;
+}
+
+.center {
+    text-align: center;
+}
+
+.cdemo-logo {
+    text-align: center;
+}
+
+#form-wrapper {
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    padding: 2em;
+    margin: 0 0 20px;
+    background: #fff;
+    overflow: hidden;
+    zoom: 1;
+}

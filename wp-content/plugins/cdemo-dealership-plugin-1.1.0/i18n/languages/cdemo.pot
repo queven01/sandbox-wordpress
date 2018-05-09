@@ -1,0 +1,1731 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: cDemo - Vehicle Dealer Inventory Management\n"
+"POT-Creation-Date: 2017-12-15 14:30-0500\n"
+"PO-Revision-Date: 2017-12-14 19:12-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: cdemo.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: cdemo.php:269 includes/admin/functions-menu.php:73
+#: includes/admin/functions-menu.php:74
+msgid "Settings"
+msgstr ""
+
+#: cdemo.php:278
+#, php-format
+msgid ""
+"Your version of PHP (%s) does not meet the minimum required version (5.4+) "
+"to run cDemo"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:12
+msgid "Item"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:13
+msgid "Items"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:26
+msgid "Title"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:27
+#: includes/admin/data/metaboxes-atv.php:60
+#: includes/admin/data/metaboxes-automobile.php:65
+#: includes/admin/data/metaboxes-motorcycle.php:61
+#: templates/partials/search-result.php:50 templates/single.php:118
+msgid "VIN"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:28
+#: includes/admin/data/metaboxes-atv.php:77
+#: includes/admin/data/metaboxes-automobile.php:83
+#: includes/admin/data/metaboxes-motorcycle.php:78
+#: includes/admin/data/metaboxes-snowmobile.php:76
+msgid "Stock #"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:29
+msgid "Vehicle Type"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:30
+#: includes/admin/data/metaboxes-atv.php:130
+#: includes/admin/data/metaboxes-automobile.php:137
+#: includes/admin/data/metaboxes-motorcycle.php:131
+#: includes/admin/data/metaboxes-snowmobile.php:129
+#: includes/functions-ui-fields.php:153 includes/functions-ui-fields.php:162
+#: includes/functions-ui-fields.php:302 includes/functions-ui-fields.php:303
+msgid "Year"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:31
+#: includes/admin/data/metaboxes-atv.php:149
+#: includes/admin/data/metaboxes-automobile.php:156
+#: includes/admin/data/metaboxes-motorcycle.php:150
+#: includes/admin/data/metaboxes-snowmobile.php:148
+#: includes/functions-ui-fields.php:171 includes/functions-ui-fields.php:180
+#: includes/functions-ui-fields.php:313 includes/functions-ui-fields.php:314
+msgid "Make"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:32
+#: includes/admin/data/metaboxes-atv.php:168
+#: includes/admin/data/metaboxes-automobile.php:174
+#: includes/admin/data/metaboxes-motorcycle.php:169
+#: includes/admin/data/metaboxes-snowmobile.php:167
+#: includes/functions-ui-fields.php:188 includes/functions-ui-fields.php:197
+#: includes/functions-ui-fields.php:324 includes/functions-ui-fields.php:325
+msgid "Model"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:33
+#: includes/functions-ui-fields.php:269 includes/functions-ui-fields.php:277
+#: templates/partials/search-view-controls.php:34
+msgid "Price"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:34
+msgid "Special"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:35
+msgid "VDP Views"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:64
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:68
+#: includes/admin/class-inventory-table.php:308
+msgid "Restore"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:312
+msgid "Delete Permanently"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:324
+msgid "Edit"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:328
+#: includes/admin/class-inventory-table.php:402
+msgid "Trash"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:331
+msgid "View"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:386
+msgid "No Listings found."
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:394
+msgid "All"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:399
+msgid "Published"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:400
+#: includes/functions-listing.php:147
+msgid "Sold"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:401
+#: includes/functions-listing.php:143
+msgid "Hidden"
+msgstr ""
+
+#: includes/admin/class-inventory-table.php:428
+msgid "Empty Trash"
+msgstr ""
+
+#: includes/admin/class-inventory-view.php:76
+#: includes/admin/class-inventory-view.php:77
+#: includes/functions-template.php:81 templates/admin/menu-page-inventory.php:9
+msgid "Inventory"
+msgstr ""
+
+#: includes/admin/class-inventory-view.php:156
+msgid "Number of items per page:"
+msgstr ""
+
+#: includes/admin/class-list-table.php:166
+msgid "List View"
+msgstr ""
+
+#: includes/admin/class-list-table.php:167
+msgid "Excerpt View"
+msgstr ""
+
+#: includes/admin/class-list-table.php:338
+msgid "No items found."
+msgstr ""
+
+#: includes/admin/class-list-table.php:465
+msgid "Select bulk action"
+msgstr ""
+
+#: includes/admin/class-list-table.php:467
+msgid "Bulk Actions"
+msgstr ""
+
+#: includes/admin/class-list-table.php:477
+msgid "Apply"
+msgstr ""
+
+#: includes/admin/class-list-table.php:527
+#: includes/admin/class-list-table.php:1328
+msgid "Show more details"
+msgstr ""
+
+#: includes/admin/class-list-table.php:590
+msgid "Filter by date"
+msgstr ""
+
+#: includes/admin/class-list-table.php:592
+msgid "All dates"
+msgstr ""
+
+#. translators: 1: month name, 2: 4-digit year
+#: includes/admin/class-list-table.php:605
+#, php-format
+msgid "%1$s %2$d"
+msgstr ""
+
+#: includes/admin/class-list-table.php:657
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-list-table.php:658
+#, php-format
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-list-table.php:659
+#, php-format
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-list-table.php:664
+#: includes/admin/class-list-table.php:676
+#: includes/admin/class-list-table.php:689
+msgid "No comments"
+msgstr ""
+
+#: includes/admin/class-list-table.php:676
+msgid "No approved comments"
+msgstr ""
+
+#: includes/admin/class-list-table.php:689
+msgid "No pending comments"
+msgstr ""
+
+#: includes/admin/class-list-table.php:766
+#: includes/admin/class-list-table.php:1353
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-list-table.php:802
+msgid "First page"
+msgstr ""
+
+#: includes/admin/class-list-table.php:812
+msgid "Previous page"
+msgstr ""
+
+#: includes/admin/class-list-table.php:819
+#: includes/admin/class-list-table.php:822
+msgid "Current Page"
+msgstr ""
+
+#: includes/admin/class-list-table.php:828
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr ""
+
+#: includes/admin/class-list-table.php:835
+msgid "Next page"
+msgstr ""
+
+#: includes/admin/class-list-table.php:845
+msgid "Last page"
+msgstr ""
+
+#: includes/admin/class-list-table.php:1073
+msgid "Select All"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:10
+msgid "Listing Currency"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:23
+msgid "Canadian Dollars"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:29
+msgid "United States Dollars"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:35
+#: includes/admin/data/metaboxes-automobile.php:453
+#: includes/admin/data/metaboxes-motorcycle.php:379
+msgid "Global Default"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:46 templates/single.php:55
+msgid "MSRP"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:65
+#: includes/admin/data/meta-fields-common.php:224
+msgid "Selling Price"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:84
+#: includes/admin/data/meta-fields-common.php:230
+msgid "Sale Price"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:103
+msgid "Start Date"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:120
+msgid "End Date"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:138
+msgid "Misc Price 1"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:157
+msgid "Misc Price 2"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:176
+msgid "Misc Price 3"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:196
+msgid "Financing Options"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:199
+msgid "Allow payments for this vehicle to be financed"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:212
+msgid "Financing Price"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:221
+msgid ""
+"Select the price that you want to be used as the 'Selling Price' for which "
+"the financial calculations will be based on"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:241
+msgid "Down Payment"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:257
+msgid ""
+"Enter amount that will be subtracted from the 'Selling Price' for which the "
+"financial calculations will be based on"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:263
+msgid "Term Length"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:274
+msgid ""
+"Enter the Term as the number of months to be used for financial calculations"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:277
+msgid "12"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:283
+msgid "24"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:289
+msgid "36"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:295
+msgid "48"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:301
+msgid "60"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:307
+msgid "72"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:313
+msgid "84"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:319
+msgid "96"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:330
+msgid "Interest Rate"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:346
+msgid ""
+"Enter the Annual Percentage Rate (APR) that will be used for financial "
+"calculations"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:352
+msgid "Calculate Payments"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:357
+msgid "Refresh Payments"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:368
+msgid "Monthly Payment"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:382
+msgid ""
+"This is the Monthly Payment Amount as calculated using the above details"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:388
+msgid "Bi-weekly Payment"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:402
+msgid ""
+"This is the Bi-Weekly Payment Amount as calculated using the above details"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:408
+msgid "Weekly Payment"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:422
+msgid "This is the Weekly Payment Amount as calculated using the above details"
+msgstr ""
+
+#: includes/admin/data/meta-fields-common.php:428
+msgid "Financing Disclaimer"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:10
+#: includes/admin/data/metaboxes-automobile.php:9
+#: includes/admin/data/metaboxes-motorcycle.php:9
+#: includes/admin/data/metaboxes-snowmobile.php:9
+msgid "Vehicle Information"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:15
+#: includes/admin/data/metaboxes-automobile.php:14
+#: includes/admin/data/metaboxes-motorcycle.php:14
+#: includes/admin/data/metaboxes-snowmobile.php:14
+msgid "Overview"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:23
+#: includes/admin/data/metaboxes-automobile.php:23
+#: includes/admin/data/metaboxes-motorcycle.php:23
+#: includes/admin/data/metaboxes-snowmobile.php:22
+msgid "Details"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:33
+#: includes/admin/data/metaboxes-automobile.php:35
+#: includes/admin/data/metaboxes-motorcycle.php:34
+#: includes/admin/data/metaboxes-snowmobile.php:32
+msgid "Pricing"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:42
+#: includes/admin/data/metaboxes-automobile.php:44
+#: includes/admin/data/metaboxes-motorcycle.php:43
+#: includes/admin/data/metaboxes-snowmobile.php:41
+msgid "Financing"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:52
+#: includes/admin/data/metaboxes-automobile.php:57
+#: includes/admin/data/metaboxes-motorcycle.php:53
+#: includes/admin/data/metaboxes-snowmobile.php:51
+msgid "Media"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:94
+#: includes/admin/data/metaboxes-automobile.php:101
+#: includes/admin/data/metaboxes-motorcycle.php:95
+#: includes/admin/data/metaboxes-snowmobile.php:93
+#: includes/functions-ui-fields.php:255 includes/functions-ui-fields.php:263
+msgid "Condition"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:107
+#: includes/admin/data/metaboxes-automobile.php:114
+#: includes/admin/data/metaboxes-motorcycle.php:108
+#: includes/admin/data/metaboxes-snowmobile.php:106
+#: includes/functions-ui-fields.php:734
+msgid "New"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:113
+#: includes/admin/data/metaboxes-automobile.php:120
+#: includes/admin/data/metaboxes-motorcycle.php:114
+#: includes/admin/data/metaboxes-snowmobile.php:112
+msgid "Certified Pre-owned"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:119
+#: includes/admin/data/metaboxes-automobile.php:126
+#: includes/admin/data/metaboxes-motorcycle.php:120
+#: includes/admin/data/metaboxes-snowmobile.php:118
+#: includes/functions-ui-fields.php:744
+msgid "Used"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:187
+#: includes/admin/data/metaboxes-automobile.php:210
+#: includes/admin/data/metaboxes-motorcycle.php:206
+#: includes/admin/data/metaboxes-snowmobile.php:186
+#: includes/functions-ui-fields.php:214 includes/functions-ui-fields.php:344
+#: includes/functions-ui-fields.php:345
+msgid "Body Type"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:205
+#: includes/admin/data/metaboxes-automobile.php:298
+#: includes/admin/data/metaboxes-motorcycle.php:242
+#: includes/admin/data/metaboxes-snowmobile.php:204
+msgid "Mileage"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:222
+#: includes/admin/data/metaboxes-motorcycle.php:259
+#: includes/admin/data/metaboxes-snowmobile.php:221
+#: includes/functions-ui-fields.php:401 includes/functions-ui-fields.php:402
+msgid "Engine Type"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:240
+#: includes/admin/data/metaboxes-motorcycle.php:277
+#: includes/admin/data/metaboxes-snowmobile.php:239
+msgid "Engine Size (cc)"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:258
+#: includes/admin/data/metaboxes-automobile.php:404
+#: includes/admin/data/metaboxes-motorcycle.php:330
+#: includes/functions-ui-fields.php:239 includes/functions-ui-fields.php:247
+#: includes/functions-ui-fields.php:450 includes/functions-ui-fields.php:451
+msgid "Transmission"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:276
+#: includes/admin/data/metaboxes-automobile.php:386
+#: includes/functions-ui-fields.php:441 includes/functions-ui-fields.php:442
+msgid "Drive Type"
+msgstr ""
+
+#: includes/admin/data/metaboxes-atv.php:294
+#: includes/admin/data/metaboxes-automobile.php:246
+#: includes/admin/data/metaboxes-motorcycle.php:224
+#: includes/admin/data/metaboxes-snowmobile.php:257
+#: includes/functions-ui-fields.php:363 includes/functions-ui-fields.php:364
+msgid "Exterior Color"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:54
+msgid "Features"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:192
+#: includes/admin/data/metaboxes-motorcycle.php:188
+#: includes/functions-ui-fields.php:335 includes/functions-ui-fields.php:336
+msgid "Trim Level"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:228
+#: includes/functions-ui-fields.php:355 includes/functions-ui-fields.php:356
+msgid "Interior Color"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:264
+#: includes/functions-ui-fields.php:374 includes/functions-ui-fields.php:375
+msgid "Seating Capacity"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:281
+#: includes/functions-ui-fields.php:382 includes/functions-ui-fields.php:383
+msgid "Doors"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:315
+#: includes/functions-ui-fields.php:222 includes/functions-ui-fields.php:231
+msgid "Engine"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:333
+#: includes/functions-ui-fields.php:412 includes/functions-ui-fields.php:413
+msgid "Displacement"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:351
+msgid "Number of Cylinders"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:368
+#: includes/admin/data/metaboxes-motorcycle.php:312
+#: includes/functions-ui-fields.php:432 includes/functions-ui-fields.php:433
+msgid "Horse Power"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:422
+#: includes/admin/data/metaboxes-motorcycle.php:348
+#: includes/functions-ui-fields.php:460 includes/functions-ui-fields.php:461
+msgid "Fuel Type"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:440
+#: includes/admin/data/metaboxes-motorcycle.php:366
+msgid "Fuel Economy Unit"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:459
+#: includes/admin/data/metaboxes-motorcycle.php:385 templates/single.php:151
+msgid "MPG"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:465
+#: includes/admin/data/metaboxes-motorcycle.php:391
+msgid "100L/km"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:476
+#: includes/admin/data/metaboxes-motorcycle.php:402
+msgid "Economy City"
+msgstr ""
+
+#: includes/admin/data/metaboxes-automobile.php:494
+#: includes/admin/data/metaboxes-automobile.php:521
+#: includes/admin/data/metaboxes-motorcycle.php:420
+msgid "Economy Highway"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:9
+msgid "Lead Details"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:17
+#: includes/functions-post-type-lead.php:163
+msgid "For Listing"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:27
+msgid "Select Listing"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:33
+#: includes/functions-post-type-lead.php:164
+msgid "Type"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:44
+#: includes/functions-post-type-lead.php:249
+#: templates/partials/contact-form-default.php:29
+msgid "Contact"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:50
+#: includes/functions-post-type-lead.php:251
+#: templates/partials/contact-form-default.php:124
+msgid "Test Drive"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:61
+msgid "Requested Time"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:74
+#: includes/functions-post-type-lead.php:165
+msgid "Name"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:87
+#: includes/functions-post-type-lead.php:166
+msgid "Preferred Contact"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:98
+#: includes/admin/data/metaboxes-lead.php:115
+#: includes/functions-post-type-lead.php:168
+#: templates/partials/contact-form-default.php:57
+#: templates/partials/contact-form-default.php:74
+#: templates/partials/contact-form-default.php:153
+#: templates/partials/contact-form-default.php:169
+msgid "Phone"
+msgstr ""
+
+#: includes/admin/data/metaboxes-lead.php:104
+#: includes/admin/data/metaboxes-lead.php:128
+#: includes/functions-post-type-lead.php:167
+#: templates/partials/contact-form-default.php:64
+#: templates/partials/contact-form-default.php:79
+#: templates/partials/contact-form-default.php:159
+#: templates/partials/contact-form-default.php:174
+msgid "Email"
+msgstr ""
+
+#: includes/admin/data/metaboxes-motorcycle.php:295
+#: includes/functions-ui-fields.php:423 includes/functions-ui-fields.php:424
+msgid "Cylinders"
+msgstr ""
+
+#: includes/admin/data/metaboxes-snowmobile.php:59
+msgid "Serial Number"
+msgstr ""
+
+#: includes/admin/data/metaboxes-snowmobile.php:275
+#: includes/functions-ui-fields.php:469 includes/functions-ui-fields.php:470
+msgid "Track Length"
+msgstr ""
+
+#: includes/admin/data/metaboxes-snowmobile.php:293
+msgid "Reverse Gear"
+msgstr ""
+
+#: includes/admin/data/metaboxes-snowmobile.php:306
+#: includes/admin/data/metaboxes-snowmobile.php:336
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/data/metaboxes-snowmobile.php:312
+#: includes/admin/data/metaboxes-snowmobile.php:342
+msgid "No"
+msgstr ""
+
+#: includes/admin/data/metaboxes-snowmobile.php:323
+msgid "Electric Start"
+msgstr ""
+
+#: includes/admin/functions-admin-ajax.php:111
+msgid "Feature could not be added"
+msgstr ""
+
+#: includes/admin/functions-admin-bar.php:41
+#: includes/functions-post-type-lead.php:137
+msgid "Listing"
+msgstr ""
+
+#: includes/admin/functions-admin-bar.php:70
+#: includes/admin/functions-menu.php:170 templates/admin/settings-header.php:33
+msgid "cDemo PIM"
+msgstr ""
+
+#: includes/admin/functions-manage-ui-fields.php:144
+#: includes/admin/functions-manage-ui-fields.php:176
+#: includes/admin/functions-manage-ui-fields.php:214
+#: includes/admin/functions-manage-ui-fields.php:255
+#: includes/admin/functions-manage-ui-fields.php:296
+#: includes/admin/functions-manage-ui-fields.php:337
+#: includes/admin/functions-manage-ui-fields.php:378
+#: includes/admin/functions-manage-ui-fields.php:419
+#: includes/admin/functions-manage-ui-fields.php:442
+#: templates/partials/settings-contact-form-config.php:19
+#: templates/partials/settings-contact-forms.php:24
+msgid "Label"
+msgstr ""
+
+#: includes/admin/functions-manage-ui-fields.php:184
+#: includes/admin/functions-manage-ui-fields.php:450
+msgid "Minimum"
+msgstr ""
+
+#: includes/admin/functions-manage-ui-fields.php:192
+#: includes/admin/functions-manage-ui-fields.php:458
+msgid "Maximum"
+msgstr ""
+
+#: includes/admin/functions-manage-ui-fields.php:222
+#: includes/admin/functions-manage-ui-fields.php:263
+#: includes/admin/functions-manage-ui-fields.php:304
+#: includes/admin/functions-manage-ui-fields.php:345
+#: includes/admin/functions-manage-ui-fields.php:386
+msgid "Placeholder"
+msgstr ""
+
+#: includes/admin/functions-manage-ui-fields.php:230
+#: includes/admin/functions-manage-ui-fields.php:271
+#: includes/admin/functions-manage-ui-fields.php:312
+#: includes/admin/functions-manage-ui-fields.php:353
+#: includes/admin/functions-manage-ui-fields.php:394
+msgid "Autocomplete"
+msgstr ""
+
+#: includes/admin/functions-manage-ui-fields.php:236
+#: includes/admin/functions-manage-ui-fields.php:277
+#: includes/admin/functions-manage-ui-fields.php:318
+#: includes/admin/functions-manage-ui-fields.php:359
+#: includes/admin/functions-manage-ui-fields.php:400
+msgid "Allow field to autocomplete as the user types"
+msgstr ""
+
+#: includes/admin/functions-manage-ui-fields.php:466
+msgid "Step"
+msgstr ""
+
+#: includes/admin/functions-menu.php:39 includes/admin/functions-menu.php:40
+msgid "cDemo"
+msgstr ""
+
+#: includes/admin/functions-menu.php:63 includes/admin/functions-menu.php:64
+#: templates/admin/menu-page-new-listing.php:9
+msgid "Add Listing"
+msgstr ""
+
+#: includes/admin/functions-menu.php:88 includes/admin/functions-menu.php:89
+#: includes/admin/functions-menu.php:167
+#: includes/admin/functions-settings.php:206
+#: includes/functions-post-type-lead.php:49
+msgid "Leads"
+msgstr ""
+
+#: includes/admin/functions-menu.php:111 templates/admin/settings-header.php:29
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/functions-menu.php:165
+#: includes/admin/functions-settings.php:198
+msgid "General"
+msgstr ""
+
+#: includes/admin/functions-menu.php:166
+#: includes/admin/functions-settings.php:199
+msgid "Appearance"
+msgstr ""
+
+#: includes/admin/functions-menu.php:168
+msgid "Fields"
+msgstr ""
+
+#: includes/admin/functions-menu.php:169
+#: includes/admin/functions-settings.php:200
+msgid "Advanced"
+msgstr ""
+
+#: includes/admin/functions-scripts.php:58
+msgid "Select or upload image"
+msgstr ""
+
+#: includes/admin/functions-scripts.php:59
+msgid "Set image"
+msgstr ""
+
+#: includes/admin/functions-scripts.php:60
+msgid "Upload image"
+msgstr ""
+
+#: includes/admin/functions-settings.php:79
+msgid "Results Page"
+msgstr ""
+
+#: includes/admin/functions-settings.php:80
+msgid "Details Page"
+msgstr ""
+
+#: includes/admin/functions-settings.php:81
+msgid "Search Form"
+msgstr ""
+
+#: includes/admin/functions-settings.php:202
+msgid "cDemo PIM API"
+msgstr ""
+
+#: includes/admin/functions-settings.php:209
+msgid "Contact Form"
+msgstr ""
+
+#: includes/admin/functions-settings.php:231
+msgid "Company Logo"
+msgstr ""
+
+#: includes/admin/functions-settings.php:247
+msgid "Favicon"
+msgstr ""
+
+#: includes/admin/functions-settings.php:263
+msgid "Company Name"
+msgstr ""
+
+#: includes/admin/functions-settings.php:280
+msgid "Copyright"
+msgstr ""
+
+#: includes/admin/functions-settings.php:297
+msgid "Currency Code"
+msgstr ""
+
+#: includes/admin/functions-settings.php:311 templates/setup-wizard.php:79
+msgid "Dollars (Canadian)"
+msgstr ""
+
+#: includes/admin/functions-settings.php:317 templates/setup-wizard.php:83
+msgid "Dollars (United States)"
+msgstr ""
+
+#: includes/admin/functions-settings.php:329
+msgid "Unit of Measurement"
+msgstr ""
+
+#: includes/admin/functions-settings.php:343 templates/setup-wizard.php:53
+msgid "Metric"
+msgstr ""
+
+#: includes/admin/functions-settings.php:349 templates/setup-wizard.php:57
+msgid "Imperial"
+msgstr ""
+
+#: includes/admin/functions-settings.php:361
+msgid "Terms & Conditions URL"
+msgstr ""
+
+#: includes/admin/functions-settings.php:378
+msgid "Terms & Conditions Text"
+msgstr ""
+
+#: includes/admin/functions-settings.php:402
+msgid "Use Theme Header"
+msgstr ""
+
+#: includes/admin/functions-settings.php:408
+msgid "Use the theme's header and footer"
+msgstr ""
+
+#: includes/admin/functions-settings.php:418
+msgid "Plugin Custom Header"
+msgstr ""
+
+#: includes/admin/functions-settings.php:424
+msgid "Toggle the plugin's default page header"
+msgstr ""
+
+#: includes/admin/functions-settings.php:434
+msgid "Plugin Custom Footer"
+msgstr ""
+
+#: includes/admin/functions-settings.php:440
+msgid "Toggle the plugin's default page footer"
+msgstr ""
+
+#: includes/admin/functions-settings.php:450
+msgid "Primary Color"
+msgstr ""
+
+#: includes/admin/functions-settings.php:466
+msgid "Default Color"
+msgstr ""
+
+#: includes/admin/functions-settings.php:482
+msgid "Hover Color"
+msgstr ""
+
+#: includes/admin/functions-settings.php:498
+msgid "Primary Text Color"
+msgstr ""
+
+#: includes/admin/functions-settings.php:514
+msgid "Default Text Color"
+msgstr ""
+
+#: includes/admin/functions-settings.php:539
+msgid "Lead Collection"
+msgstr ""
+
+#: includes/admin/functions-settings.php:553
+msgid "Default"
+msgstr ""
+
+#: includes/admin/functions-settings.php:559
+#: includes/admin/functions-settings.php:711
+msgid "Gravity Forms"
+msgstr ""
+
+#: includes/admin/functions-settings.php:576
+msgid "Email Address"
+msgstr ""
+
+#: includes/admin/functions-settings.php:593
+msgid "Outgoing Email Address"
+msgstr ""
+
+#: includes/admin/functions-settings.php:610
+msgid "Outgoing Email Name"
+msgstr ""
+
+#: includes/admin/functions-settings.php:627
+msgid "Send Notification"
+msgstr ""
+
+#: includes/admin/functions-settings.php:637
+msgid "Send email notification on contact form submission"
+msgstr ""
+
+#: includes/admin/functions-settings.php:643
+msgid "Confirmation Message"
+msgstr ""
+
+#: includes/admin/functions-settings.php:660
+msgid "Comments Max Characters"
+msgstr ""
+
+#: includes/admin/functions-settings.php:677
+msgid "Email Subject"
+msgstr ""
+
+#: includes/admin/functions-settings.php:694
+msgid "Email Template"
+msgstr ""
+
+#: includes/admin/functions-settings.php:722
+msgid "Form Content"
+msgstr ""
+
+#: includes/admin/functions-settings.php:747
+msgid "Plugin CSS"
+msgstr ""
+
+#: includes/admin/functions-settings.php:753
+msgid "Uncheck this if you plan on css-ing the frontend appearance"
+msgstr ""
+
+#: includes/admin/functions-settings.php:763
+msgid "Inventory Page"
+msgstr ""
+
+#: includes/admin/functions-settings.php:774
+msgid "This is the page that all search results will lead to"
+msgstr ""
+
+#: includes/admin/functions-settings.php:777
+msgid "Select a Page"
+msgstr ""
+
+#: includes/admin/functions-settings.php:784 templates/partials/navbar.php:52
+msgid "Categories"
+msgstr ""
+
+#: includes/admin/functions-settings.php:800
+msgid "Erase Options"
+msgstr ""
+
+#: includes/admin/functions-settings.php:806
+msgid "Erase all plugin settings on uninstall"
+msgstr ""
+
+#: includes/admin/functions-settings.php:816
+msgid "Erase Content"
+msgstr ""
+
+#: includes/admin/functions-settings.php:822
+msgid "Erase all plugin content and listings on plugin install"
+msgstr ""
+
+#: includes/admin/functions-settings.php:838
+msgid "API Key"
+msgstr ""
+
+#: includes/admin/functions-settings.php:844
+msgid "cDemo PIM API Key"
+msgstr ""
+
+#: includes/admin/functions-settings.php:876
+msgid "We were unable to verify your API key"
+msgstr ""
+
+#: includes/class-sync-buffer.php:108
+msgid "Chunk max size exceeded"
+msgstr ""
+
+#: includes/class-sync-service.php:258
+msgid "Not syncing"
+msgstr ""
+
+#: includes/class-sync-service.php:273
+msgid "Fetching PIM records"
+msgstr ""
+
+#: includes/class-sync-service.php:276
+msgid "Synchronizing records"
+msgstr ""
+
+#: includes/features.php:132
+msgid "Upholstery Material"
+msgstr ""
+
+#: includes/features.php:133
+msgid "Vehicle Fuel Type"
+msgstr ""
+
+#: includes/features.php:134
+msgid "Exterior Options"
+msgstr ""
+
+#: includes/features.php:135
+msgid "Roof Type & Equipment"
+msgstr ""
+
+#: includes/features.php:136
+msgid "Wheel Type Options"
+msgstr ""
+
+#: includes/features.php:137
+msgid "Interior Options"
+msgstr ""
+
+#: includes/features.php:138
+msgid "Audio & Entertainment Options"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:20
+msgctxt "post type general name"
+msgid "ATVs"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:21
+msgctxt "post type singular name"
+msgid "ATV"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:22
+#: includes/functions-post-type-automobile.php:22
+#: includes/functions-post-type-motorcycle.php:22
+#: includes/functions-post-type-snowmobile.php:22
+#: templates/admin/menu-page-inventory.php:10
+msgid "Add New"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:23
+msgid "Add New ATV"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:24
+msgid "New ATV"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:25
+msgid "Edit ATV"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:26
+msgid "View ATV"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:27
+msgid "All ATVs"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:28
+msgid "Search ATVs"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:29
+msgid "No ATVs found."
+msgstr ""
+
+#: includes/functions-post-type-atv.php:30
+msgid "No ATVs found in Trash."
+msgstr ""
+
+#: includes/functions-post-type-atv.php:31
+msgid "ATV Archives"
+msgstr ""
+
+#: includes/functions-post-type-atv.php:32
+msgid "ATV Attributes"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:20
+msgctxt "post type general name"
+msgid "Automobiles"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:21
+msgctxt "post type singular name"
+msgid "Automobile"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:23
+msgid "Add New Listing"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:24
+msgid "New Automobile"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:25
+msgid "Edit Automobile"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:26
+msgid "View Automobile"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:27
+msgid "All Automobiles"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:28
+msgid "Search Automobiles"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:29
+msgid "No automobiles found."
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:30
+msgid "No automobiles found in Trash."
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:31
+msgid "Automobile Archives"
+msgstr ""
+
+#: includes/functions-post-type-automobile.php:32
+msgid "Automobile Attributes"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:42
+msgctxt "post type general name"
+msgid "Leads"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:43
+msgctxt "post type singular name"
+msgid "Lead"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:44
+msgctxt "lead"
+msgid "Add New"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:45
+msgid "Add New Lead"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:46
+msgid "New Lead"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:47
+msgid "Edit Lead"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:48
+msgid "View Lead"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:50
+msgid "Search Leads"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:51
+msgid "No leads found."
+msgstr ""
+
+#: includes/functions-post-type-lead.php:52
+msgid "No leads found in Trash."
+msgstr ""
+
+#: includes/functions-post-type-lead.php:53
+msgid "Lead Archives"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:54
+msgid "Lead Attributes"
+msgstr ""
+
+#: includes/functions-post-type-lead.php:240
+#: includes/functions-post-type-lead.php:276
+#: includes/functions-ui-fields.php:523
+msgid "-"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:20
+msgctxt "post type general name"
+msgid "Motorcycles"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:21
+msgctxt "post type singular name"
+msgid "Motorcycle"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:23
+msgid "Add New Motorcycle"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:24
+msgid "New Motorcycle"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:25
+msgid "Edit Motorcycle"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:26
+msgid "View Motorcycle"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:27
+msgid "All Motorcycles"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:28
+msgid "Search Motorcycles"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:29
+msgid "No motorcycles found."
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:30
+msgid "No motorcycles found in Trash."
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:31
+msgid "Motorcycle Archives"
+msgstr ""
+
+#: includes/functions-post-type-motorcycle.php:32
+msgid "Motorcycle Attributes"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:20
+msgctxt "post type general name"
+msgid "Snowmobiles"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:21
+msgctxt "post type singular name"
+msgid "Snowmobile"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:23
+msgid "Add New Snowmobile"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:24
+msgid "New Snowmobile"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:25
+msgid "Edit Snowmobile"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:26
+msgid "View Snowmobile"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:27
+msgid "All Snowmobiles"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:28
+msgid "Search Snowmobiles"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:29
+msgid "No snowmobiles found."
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:30
+msgid "No Snowmobiles found in Trash."
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:31
+msgid "Snowmobile Archives"
+msgstr ""
+
+#: includes/functions-post-type-snowmobile.php:32
+msgid "Snowmobile Attributes"
+msgstr ""
+
+#: includes/functions-rest-api.php:116
+msgid "Field was invalid"
+msgstr ""
+
+#: includes/functions-template-general.php:26
+msgid "Inventory Header Navigation Menu"
+msgstr ""
+
+#: includes/functions-template-general.php:27
+msgid "Inventory Footer Navigation Menu"
+msgstr ""
+
+#: includes/functions-template.php:45
+msgid "cDemo Inventory"
+msgstr ""
+
+#: includes/functions-ui-fields.php:181
+msgid "Enter a make"
+msgstr ""
+
+#: includes/functions-ui-fields.php:198
+msgid "Enter a model"
+msgstr ""
+
+#: includes/functions-ui-fields.php:205
+msgid "Body Style"
+msgstr ""
+
+#: includes/functions-ui-fields.php:215 includes/functions-ui-fields.php:232
+msgid "Enter a type"
+msgstr ""
+
+#: includes/functions-ui-fields.php:248
+msgid "Enter a transmission"
+msgstr ""
+
+#: includes/functions-ui-fields.php:390 includes/functions-ui-fields.php:391
+msgid "Odometer Reading"
+msgstr ""
+
+#: includes/functions-ui-fields.php:754
+msgid "Certified Pre-Owned"
+msgstr ""
+
+#: includes/functions-widgets.php:27
+msgid "Listing Widget Area"
+msgstr ""
+
+#: includes/functions-widgets.php:28
+msgid "Widget area displayed on listing detail pages"
+msgstr ""
+
+#: includes/helpers.php:256
+msgid "Base Slug"
+msgstr ""
+
+#: templates/admin/manage-ui-fields.php:17
+msgid "Select a category to edit:"
+msgstr ""
+
+#: templates/admin/manage-ui-fields.php:34
+#: templates/admin/manage-ui-search-form.php:38
+msgid "Select"
+msgstr ""
+
+#: templates/admin/manage-ui-fields.php:58
+#: templates/admin/manage-ui-search-form.php:63
+msgid "Inactive Fields"
+msgstr ""
+
+#: templates/admin/manage-ui-fields.php:63
+#: templates/admin/manage-ui-search-form.php:68
+msgid "No more fields available"
+msgstr ""
+
+#: templates/admin/manage-ui-fields.php:101
+msgid "Active fields"
+msgstr ""
+
+#: templates/admin/manage-ui-fields.php:103
+#: templates/admin/manage-ui-fields.php:141
+#: templates/admin/manage-ui-search-form.php:108
+#: templates/admin/manage-ui-search-form.php:146
+msgid "Save Fields"
+msgstr ""
+
+#: templates/admin/manage-ui-fields.php:115
+#: templates/admin/manage-ui-search-form.php:120
+msgid "Get started by dragging and dropping a field"
+msgstr ""
+
+#: templates/admin/manage-ui-search-form.php:17
+msgid "Select a context to edit:"
+msgstr ""
+
+#: templates/admin/manage-ui-search-form.php:22
+msgid "Global Inventory"
+msgstr ""
+
+#: templates/admin/menu-page-inventory.php:14
+msgid "Search results for "
+msgstr ""
+
+#: templates/admin/menu-page-inventory.php:26
+msgid "Search Inventory"
+msgstr ""
+
+#: templates/admin/menu-page-new-listing.php:13
+msgid "What type of listing would you like to add?"
+msgstr ""
+
+#: templates/admin/metabox-field.php:42
+msgid "Prevent Data Driver from overwriting"
+msgstr ""
+
+#: templates/admin/settings-header.php:21
+msgid "cDemo - Vehicle Inventory Management System"
+msgstr ""
+
+#: templates/admin/settings-header.php:37
+msgid "Get Support"
+msgstr ""
+
+#: templates/admin/settings-sidebar.php:5
+msgid "Announcements"
+msgstr ""
+
+#: templates/admin/settings-sidebar.php:12
+msgid "Check out the cDemo PIM "
+msgstr ""
+
+#: templates/admin/settings-sidebar.php:17
+msgid "Learn more"
+msgstr ""
+
+#: templates/admin/tab-settings-data-driver.php:17
+msgid "cDemo PIM Sync"
+msgstr ""
+
+#: templates/admin/tab-settings-data-driver.php:23
+msgid "Sync Status"
+msgstr ""
+
+#: templates/inventory.php:24
+msgid "Previous"
+msgstr ""
+
+#: templates/inventory.php:25
+msgid "Next"
+msgstr ""
+
+#: templates/inventory.php:69 templates/inventory.php:95
+msgid "Search"
+msgstr ""
+
+#: templates/inventory.php:166
+msgid "Oops we weren't able to find what you were looking for"
+msgstr ""
+
+#: templates/partials/contact-form-default.php:43
+#: templates/partials/contact-form-default.php:138
+msgid "Your name"
+msgstr ""
+
+#: templates/partials/contact-form-default.php:50
+#: templates/partials/contact-form-default.php:146
+msgid "Preferred contact method"
+msgstr ""
+
+#: templates/partials/contact-form-default.php:88
+msgid "What would you like to know?"
+msgstr ""
+
+#: templates/partials/contact-form-default.php:107
+#: templates/partials/contact-form-default.php:203
+msgid "Submit"
+msgstr ""
+
+#: templates/partials/contact-form-default.php:182
+msgid "Your requested date and time"
+msgstr ""
+
+#: templates/partials/feature-sections.php:17
+msgid "Add Feature"
+msgstr ""
+
+#: templates/partials/listing-media.php:13
+msgid "Upload"
+msgstr ""
+
+#: templates/partials/search-result.php:45 templates/single.php:114
+msgid "Stock"
+msgstr ""
+
+#: templates/partials/search-result.php:117
+#: templates/partials/search-result.php:118
+msgid "Show More"
+msgstr ""
+
+#: templates/partials/search-result.php:118
+msgid "Show Less"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:15
+msgid "10"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:16
+msgid "25"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:17
+msgid "50"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:18
+msgid "100"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:21
+msgid "Per page"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:32
+msgid "Date"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:33
+msgid "A-Z"
+msgstr ""
+
+#: templates/partials/search-view-controls.php:42
+msgid "desc"
+msgstr ""
+
+#: templates/partials/settings-contact-form-config.php:31
+#: templates/partials/settings-contact-forms.php:29
+msgid "Form"
+msgstr ""
+
+#: templates/partials/settings-contact-form-config.php:38
+#: templates/partials/settings-contact-forms.php:33
+msgid "Select a Form"
+msgstr ""
+
+#: templates/partials/settings-contact-form-config.php:57
+msgid "Shortcode"
+msgstr ""
+
+#: templates/partials/settings-contact-form-config.php:64
+msgid "Paste this shortcode into the Form Content editor"
+msgstr ""
+
+#: templates/partials/settings-contact-forms.php:19
+msgid "Add New Gravity Form"
+msgstr ""
+
+#: templates/partials/settings-contact-forms.php:43
+msgid "Add Form"
+msgstr ""
+
+#: templates/setup-wizard.php:41
+msgid "Please select your unit of measurement"
+msgstr ""
+
+#: templates/setup-wizard.php:67
+msgid "Please select your currency"
+msgstr ""
+
+#: templates/setup-wizard.php:100
+msgid "What is your company name?"
+msgstr ""
+
+#: templates/setup-wizard.php:121
+msgid "Save & Next"
+msgstr ""
+
+#: templates/setup-wizard.php:130
+msgid "Skip setup wizard"
+msgstr ""
+
+#: templates/single.php:64
+msgid "Savings"
+msgstr ""
+
+#: templates/single.php:83 templates/single.php:92
+msgid "Our Price"
+msgstr ""
+
+#: templates/single.php:136
+msgid "CITY"
+msgstr ""
+
+#: templates/single.php:140
+msgid "HWY"
+msgstr ""
+
+#: templates/single.php:147
+msgid "L/100km"
+msgstr ""
+
+#: templates/single.php:171
+msgid "Vehicle Specifications"
+msgstr ""
+
+#: templates/single.php:233
+msgid "Similar Vehicles"
+msgstr ""
+
+#: templates/single.php:235
+msgid "View More"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "cDemo - Vehicle Dealer Inventory Management"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://#"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Turn your website into a vehicle dealership."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "cDemo, Smartcat"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.cdemo.com/"
+msgstr ""

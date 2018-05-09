@@ -1,0 +1,110 @@
+#data-driver {
+    display: table;
+    width: 100%;
+}
+
+#data-driver .left,
+#data-driver .right {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#data-driver .left {
+    width: 80%;
+}
+
+#data-driver .right {
+    width: 20%;
+    text-align: center;
+}
+
+.sync-progress .sync-indicator {
+    margin: 4px;
+    position: absolute;
+}
+
+#data-driver .control-sync {
+    height: 32px;
+    line-height: 29px;
+    margin: 0;
+    width: 80%;
+}
+
+#data-driver .control-feedback,
+#data-driver .sync-indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: dashicons;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#data-driver .control-feedback:before {
+    content: "\f463";
+}
+
+#data-driver.started .control-feedback:before,
+#data-driver.paused .sync-indicator:before {
+    content: "\f523";
+}
+
+#data-driver.paused .control-feedback:before,
+#data-driver.error .control-feedback:before {
+    content: "\f522";
+}
+
+#data-driver.buffering .control-feedback {
+    cursor: wait;
+}
+#data-driver.buffering .sync-indicator:before {
+    content: "\f316";
+}
+
+#data-driver.started .sync-indicator {
+    animation: spin 1s linear infinite;
+}
+#data-driver.started .sync-indicator:before {
+    content: "\f463";
+}
+
+#data-driver.error .sync-indicator:before {
+    content: "\f158";
+}
+
+#data-driver .ui-progressbar-value {
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+}
+
+@media(min-width: 768px) {
+
+    #data-driver {
+        width: 25em;
+    }
+
+    #data-driver .control-feedback {
+        vertical-align: middle;
+    }
+
+}
+
+
+@keyframes spin {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}

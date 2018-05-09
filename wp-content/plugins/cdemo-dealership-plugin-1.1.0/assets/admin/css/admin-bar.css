@@ -1,0 +1,46 @@
+/*<editor-fold desc="Data Driver">*/
+#wp-admin-bar-cdemo-sync .ab-icon:before {
+    vertical-align: middle;
+    content: "\f463";
+}
+
+#wp-admin-bar-cdemo-sync .ab-item[data-status="started"] .ab-icon:before {
+    content: "\f523";
+}
+
+#wp-admin-bar-cdemo-sync .ab-item[data-status="paused"] .ab-icon:before {
+    content: "\f522";
+}
+
+#wp-admin-bar-cdemo-sync .ab-item[data-status="buffering"] .ab-icon:before {
+    content: "\f316";
+}
+
+#wp-admin-bar-cdemo-sync .ab-item[data-status="buffering"] {
+    cursor: wait;
+}
+
+#wp-admin-bar-cdemo-sync .progress {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    vertical-align: top;
+}
+
+#wp-admin-bar-cdemo-sync .progress strong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+}
+/*</editor-fold>*/
+
+#wp-admin-bar-cdemo-edit-listing .ab-icon:before {
+    vertical-align: middle;
+    content: "\f464";
+}

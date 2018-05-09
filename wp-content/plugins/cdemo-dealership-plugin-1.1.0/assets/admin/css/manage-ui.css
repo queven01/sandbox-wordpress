@@ -1,0 +1,230 @@
+
+/**
+ * Wrapper
+ */
+.cdemo-manage-ui {
+    margin-top: 23px;
+    padding: 10px;
+    overflow: hidden;
+    background: #fbfbfb;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+#cdemo-manage-ui-frame {
+    display: block;
+    margin-left: 300px;
+    margin-top: 23px;
+}
+
+.ui-fields {
+    margin: auto;
+    min-height: 10px;
+}
+
+.empty-message {
+    color: #555;
+    margin: 0;
+    padding: 15px;
+}
+
+/**
+ * Fields palette
+ */
+.ui-fields-column {
+    display: inline;
+    width: 281px;
+    margin-left: -300px;
+    clear: both;
+    float: left;
+    padding-top: 0;
+}
+
+.ui-fields-column .title {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    background: #f9f9f9;
+    box-sizing: border-box;
+}
+
+
+.ui-fields-palette {
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.ui-fields-palette .inner {
+    background: #ffffff;
+}
+
+
+/**
+ * Draggable field
+ */
+.ui-field {
+    margin: -1px 0 0 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.ui-field .field-title {
+    margin: auto;
+    padding: 10px;
+    height: 22px;
+    line-height: 22px;
+    cursor: move;
+}
+
+.ui-field .field-title .toggle {
+    float: right;
+    font: 400 20px/1 dashicons;
+    color: #666;
+    display: none;
+}
+
+.ui-field.editable .field-title .toggle:before {
+    content: "\f140";
+}
+
+.ui-field.editable.expanded .field-title .toggle:before {
+    content: "\f142";
+}
+
+.ui-field.editable .field-title:hover .toggle {
+    display: inline-block;
+}
+
+.ui-field.expanded .field-title {
+    border-bottom: 1px solid #eee;
+}
+
+.ui-field .content {
+    display: none;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.ui-field.ui-sortable-helper {
+    border: 1px solid #eee;
+    background: #ffffff;
+    height: 42px !important;
+}
+
+.ui-field.ui-sortable-placeholder {
+    border: 1px dashed #ccc;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    visibility: visible !important;
+}
+
+#cdemo-fields-configuration .ui-field:first-child {
+    border-top: none;
+}
+
+.ui-field .form-field {
+    line-height: 24px;
+    margin: 8px 0;
+    padding: 5px 20px 5px 162px;
+
+}
+
+.ui-field .form-field .label {
+    margin: 0 0 0 -150px;
+    width: 150px;
+    float: left;
+}
+
+
+/**
+ * Field management area
+ */
+#cdemo-manage-ui-fields {
+    float: left;
+    min-width: 100%;
+    margin-top: 3px;
+}
+
+.ui-fields-management {
+    position: relative;
+    margin-right: 20px;
+    margin-top: -3px;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.ui-edit-fields {
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.ui-edit-fields .inner {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.ui-edit-fields .inner .fields-drop {
+    margin-bottom: 20px;
+}
+
+
+/**
+ * Header and footer
+ */
+#cdemo-ui-fields-header {
+    background: #f9f9f9;
+    margin: 0;
+}
+
+.ui-publishing-actions {
+    clear: both;
+    padding: 10px 15px;
+    line-height: 28px;
+}
+
+.ui-publishing-actions .title {
+    float: left;
+    margin: 0;
+}
+
+.ui-publishing-actions .ui-publishing-action {
+    text-align: right;
+    float: right;
+}
+
+#cdemo-ui-fields-footer {
+    padding: 0 10px;
+    background: #f9f9f9;
+}
+
+
+/**
+ * For small screens
+ */
+@media screen and (max-width: 782px) {
+
+    #cdemo-manage-ui-frame {
+        margin-left: 0;
+        float: none;
+        width: 100%;
+    }
+
+    #cdemo-ui-fields-column {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+
+    #cdemo-manage-ui-fields {
+        margin-top: 25px;
+    }
+
+    .cdemo-field.ui-sortable-helper {
+        width: 100% !important;
+    }
+
+}
