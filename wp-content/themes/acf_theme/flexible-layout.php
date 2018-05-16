@@ -15,6 +15,7 @@
                     include 'flexiable-layout-templates/hero-template.php';
                     include 'flexiable-layout-templates/columns_template.php';
                     include 'flexiable-layout-templates/call_to_action_template.php';
+                    include 'flexiable-layout-templates/image-carousel-template.php';
 
                  endwhile;
 
