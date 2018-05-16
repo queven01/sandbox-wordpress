@@ -1,4 +1,4 @@
-<header id="masthead" class="site-header header-one">
+<header id="masthead" class="site-header header-two">
     <?php
     $top_bar = get_theme_mod( 'top_bar' );
     $phone_number = get_theme_mod( 'phone_number' );

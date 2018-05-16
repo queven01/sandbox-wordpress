@@ -243,17 +243,22 @@ function acf_theme_customizer_css() { ?>
 	        background-color: <?php echo get_theme_mod( 'button_bg_hover3' ); ?>;
 	        color: <?php echo get_theme_mod( 'button_txt_hover3' ); ?>;
 	        border-color: <?php echo get_theme_mod( 'button_border_color3' ); ?>; }
-	    /*Heading One*/
-	     .header-one .main-navigation a{
+	    /*Header Views and Styles*/
+	     .site-header .main-navigation a{
 		     color: <?php echo get_theme_mod( 'header_text_color' ); ?>;
 		     padding: 1.5rem 1rem;
 		     border-bottom: 5px solid transparent;
 	     }
-	    .header-one .main-navigation a:hover{
+	    .site-header .main-navigation a:hover{
 		    border-bottom: 5px solid <?php echo get_theme_mod( 'header_text_color_hover' ); ?>;
 		    color: <?php echo get_theme_mod( 'header_text_color_hover' ); ?>;
 	    }
-	    header.header-one{
+	    .header-three #primary-menu li a:hover{
+		    background: #0000002e;
+		    color: <?php echo get_theme_mod( 'header_text_color_hover' ); ?>;
+		    text-decoration: none;
+	    }
+	    header.site-header{
 		    background: <?php echo get_theme_mod( 'header_background' ); ?>;
 	    }
 	    .top-bar {
@@ -262,16 +267,9 @@ function acf_theme_customizer_css() { ?>
 	    #collapseExample {
 		    position: absolute;
 		    z-index: 9;
-		    top: 0px;
 		    left: 0px;
 		    right: 0px;
 		    background-color: #0000008c;
-	    }
-	    #primary-menu a {
-
-	    }
-	    #primary-menu a:hover {
-
 	    }
     </style>
     <?php

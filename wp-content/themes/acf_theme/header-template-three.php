@@ -1,4 +1,4 @@
-<header id="masthead" class="site-header header-one ">
+<header id="masthead" class="site-header header-three">
     <?php
     $top_bar = get_theme_mod( 'top_bar' );
     $phone_number = get_theme_mod( 'phone_number' );
@@ -10,8 +10,8 @@
 			<span><?php echo $phone_number; ?></span>
 		</div>
 	<?php endif; ?>
-	<div class="">
-        <div class="row align-items-center">
+	<div class="container">
+        <div class="row align-items-center py-4">
             <div class="col-md-3">
                 <div class="site-branding d-flex justify-content-center">
                     <?php
@@ -26,28 +26,33 @@
             </div>
             <div class="col-md-9">
                 <nav id="site-navigatio" class="main-navigation">
-                    <div class="d-flex justify-content-center">
-                        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acf_theme' ); ?></button>
-
-	                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-		                    Button with data-target
-	                    </button>
+                    <div class="d-flex justify-content-end">
+	                    <div class="button" onclick="myFunction(this)" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		                    <div class="bar1"></div>
+		                    <div class="bar2"></div>
+		                    <div class="bar3"></div>
+	                    </div>
                     </div>
                 </nav><!-- #site-navigation -->
             </div>
-	        <div class="col-md-12">
-		        <div class=" collapse" id="collapseExample">
-                    <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'menu-1',
-                        'menu_id'        => 'primary-menu',
-                    ) );
-                    ?>
-		        </div>
-	        </div>
         </div>
     </div>
+	<div class=" collapse" id="collapseExample">
+		<div class="container">
+	        <?php
+	        wp_nav_menu( array(
+	            'theme_location' => 'menu-1',
+	            'menu_id'        => 'primary-menu',
+	        ) );
+	        ?>
+		</div>
+	</div>
 </header><!-- #masthead -->
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
 
 <!---->
 <!--$description = get_bloginfo( 'description', 'display' );-->
