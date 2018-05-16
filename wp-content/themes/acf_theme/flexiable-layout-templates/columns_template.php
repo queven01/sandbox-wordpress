@@ -40,7 +40,7 @@ if( get_row_layout() == 'columns_row' ):
 
                     while ( have_rows('text_options') ) : the_row();
 
-                        $text_alignment =  get_sub_field('text_alignment');
+                        $text_alignment =  'text-align: '. get_sub_field('text_alignment').';';
                         $text_color = 'color: '.get_sub_field('text_color').';';
                         $heading_size =  get_sub_field('heading_size');
 
