@@ -42,6 +42,9 @@
 	    if ($header_view == 'header_three' ) {
 	        include 'header-template-three.php';
 	    }
+	    if ($header_view == 'header_four' ) {
+	        include 'header-template-four.php';
+	    }
     ?>
 
 <div id="content" class="site-content">

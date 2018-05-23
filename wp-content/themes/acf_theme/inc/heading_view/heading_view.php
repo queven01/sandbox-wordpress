@@ -29,9 +29,37 @@ $wp_customize->add_control( new WP_Customize_Control(
             'header_one'  => 'Header 1',
             'header_two' => 'Header 2',
             'header_three' => 'Header 3',
+            'header_four' => 'Header 4',
         ),
     )
 ) );
+/**
+ *-------------------- Sticky Navigation -----------------------------*
+ */
+$wp_customize->add_setting('fixed', array(
+    'default' => ''
+));
+
+$wp_customize->add_control('fixed', array(
+    'label'    => __('Sticky Navigation'),
+    'section'  => 'header_option',
+    'type'     => 'checkbox',
+    'settings' => 'fixed',
+));
+
+/**
+ *-------------------- Transparent Navigation -----------------------------*
+ */
+$wp_customize->add_setting('transparent', array(
+    'default' => ''
+));
+
+$wp_customize->add_control('transparent', array(
+    'label'    => __('Transparent Navigation'),
+    'section'  => 'header_option',
+    'type'     => 'checkbox',
+    'settings' => 'transparent',
+));
 
 /**
  *-------------------- Text Colors -----------------------------*
