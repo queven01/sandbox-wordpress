@@ -129,9 +129,7 @@ function acf_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'acf_theme_scripts' );
 
-/**
- * Custom Color Function
- */
+
 function acf_theme_customizer_css() { ?>
     <style type="text/css">
 	    /*Button Settings*/
@@ -297,7 +295,19 @@ add_action( 'wp_head', 'acf_theme_customizer_css' );
 //    return $field;
 //}
 //add_filter('acf/load_field/name=font_family', 'acf_load_google_font_options');
+/**
+ * Button on Editor
+ */
 
+function include_media_button_js_file() {
+    wp_enqueue_script('media_button', '/wp-content/themes/acf_theme/js/media_button.js', array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_media', 'include_media_button_js_file');
+
+function add_my_media_button() {
+    echo '<a href="#" id="insert-my-media" class="button insert-my-media">Add my media</a>';
+}
+add_action('media_buttons', 'add_my_media_button');
 
 /**
  * Implement the Custom Header feature.
