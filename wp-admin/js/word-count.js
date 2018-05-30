@@ -34,11 +34,11 @@
 	 *                                                            are non-spaces.
 	 * @param {RegExp} settings.characters_including_spacesRegExp Optional. Regular expression to find characters
 	 *                                                            including spaces.
-	 * @param {RegExp} settings.shortcodesRegExp                  Optional. Regular expression to find shortcodes.
+	 * @param {RegExp} settings.shortcodesRegExp                  Optional. Regular expression to find shortcodes-plugin.
 	 * @param {Object} settings.l10n                              Optional. Localization object containing specific
 	 *                                                            configuration for the current localization.
 	 * @param {String} settings.l10n.type                         Optional. Method of finding words to count.
-	 * @param {Array}  settings.l10n.shortcodes                   Optional. Array of shortcodes that should be removed
+	 * @param {Array}  settings.l10n.shortcodes-plugin                   Optional. Array of shortcodes-plugin that should be removed
 	 *                                                            from the text.
 	 *
 	 * @return void
@@ -60,7 +60,7 @@
 
 		shortcodes = this.settings.l10n.shortcodes;
 
-		// If there are any localization shortcodes, add this as type in the settings.
+		// If there are any localization shortcodes-plugin, add this as type in the settings.
 		if ( shortcodes && shortcodes.length ) {
 			this.settings.shortcodesRegExp = new RegExp( '\\[\\/?(?:' + shortcodes.join( '|' ) + ')[^\\]]*?\\]', 'g' );
 		}
@@ -174,7 +174,7 @@
 			// Remove all HTML comments.
 			text = text.replace( this.settings.HTMLcommentRegExp, '' );
 
-			// If a shortcode regular expression has been provided use it to remove shortcodes.
+			// If a shortcode regular expression has been provided use it to remove shortcodes-plugin.
 			if ( this.settings.shortcodesRegExp ) {
 				text = text.replace( this.settings.shortcodesRegExp, '\n' );
 			}

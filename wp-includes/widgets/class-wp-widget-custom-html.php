@@ -111,13 +111,13 @@ class WP_Widget_Custom_HTML extends WP_Widget {
 	public function widget( $args, $instance ) {
 		global $post;
 
-		// Override global $post so filters (and shortcodes) apply in a consistent context.
+		// Override global $post so filters (and shortcodes-plugin) apply in a consistent context.
 		$original_post = $post;
 		if ( is_singular() ) {
 			// Make sure post is always the queried object on singular queries (not from another sub-query that failed to clean up the global $post).
 			$post = get_queried_object();
 		} else {
-			// Nullify the $post global during widget rendering to prevent shortcodes from running with the unexpected context on archive queries.
+			// Nullify the $post global during widget rendering to prevent shortcodes-plugin from running with the unexpected context on archive queries.
 			$post = null;
 		}
 

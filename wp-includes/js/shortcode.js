@@ -53,11 +53,11 @@ window.wp = window.wp || {};
 			return result;
 		},
 
-		// ### Replace matching shortcodes in a block of text
+		// ### Replace matching shortcodes-plugin in a block of text
 		//
 		// Accepts a shortcode `tag`, content `text` to scan, and a `callback`
 		// to process the shortcode matches and return a replacement string.
-		// Returns the `text` with all shortcodes replaced.
+		// Returns the `text` with all shortcodes-plugin replaced.
 		//
 		// Shortcode matches are objects that contain the shortcode `tag`,
 		// a shortcode `attrs` object, the `content` between shortcode tags,
@@ -94,17 +94,17 @@ window.wp = window.wp || {};
 		// ### Generate a RegExp to identify a shortcode
 		//
 		// The base regex is functionally equivalent to the one found in
-		// `get_shortcode_regex()` in `wp-includes/shortcodes.php`.
+		// `get_shortcode_regex()` in `wp-includes/shortcodes-plugin.php`.
 		//
 		// Capture groups:
 		//
-		// 1. An extra `[` to allow for escaping shortcodes with double `[[]]`
+		// 1. An extra `[` to allow for escaping shortcodes-plugin with double `[[]]`
 		// 2. The shortcode name
 		// 3. The shortcode argument list
 		// 4. The self closing `/`
 		// 5. The content of a shortcode when it wraps some content.
 		// 6. The closing tag.
-		// 7. An extra `]` to allow for escaping shortcodes with double `[[]]`
+		// 7. An extra `]` to allow for escaping shortcodes-plugin with double `[[]]`
 		regexp: _.memoize( function( tag ) {
 			return new RegExp( '\\[(\\[?)(' + tag + ')(?![\\w-])([^\\]\\/]*(?:\\/(?!\\])[^\\]\\/]*)*?)(?:(\\/)\\]|\\](?:([^\\[]*(?:\\[(?!\\/\\2\\])[^\\[]*)*)(\\[\\/\\2\\]))?)(\\]?)', 'g' );
 		}),
@@ -127,7 +127,7 @@ window.wp = window.wp || {};
 				pattern, match;
 
 			// This regular expression is reused from `shortcode_parse_atts()`
-			// in `wp-includes/shortcodes.php`.
+			// in `wp-includes/shortcodes-plugin.php`.
 			//
 			// Capture groups:
 			//

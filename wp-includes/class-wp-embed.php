@@ -47,9 +47,9 @@ class WP_Embed {
 	/**
 	 * Process the [embed] shortcode.
 	 *
-	 * Since the [embed] shortcode needs to be run earlier than other shortcodes,
-	 * this function removes all existing shortcodes, registers the [embed] shortcode,
-	 * calls do_shortcode(), and then re-registers the old shortcodes.
+	 * Since the [embed] shortcode needs to be run earlier than other shortcodes-plugin,
+	 * this function removes all existing shortcodes-plugin, registers the [embed] shortcode,
+	 * calls do_shortcode(), and then re-registers the old shortcodes-plugin.
 	 *
 	 * @global array $shortcode_tags
 	 *
@@ -59,7 +59,7 @@ class WP_Embed {
 	public function run_shortcode( $content ) {
 		global $shortcode_tags;
 
-		// Back up current registered shortcodes and clear them all out
+		// Back up current registered shortcodes-plugin and clear them all out
 		$orig_shortcode_tags = $shortcode_tags;
 		remove_all_shortcodes();
 
@@ -68,7 +68,7 @@ class WP_Embed {
 		// Do the shortcode (only the [embed] one is registered)
 		$content = do_shortcode( $content, true );
 
-		// Put the original shortcodes back
+		// Put the original shortcodes-plugin back
 		$shortcode_tags = $orig_shortcode_tags;
 
 		return $content;

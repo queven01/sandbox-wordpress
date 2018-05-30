@@ -1077,7 +1077,7 @@ function wp_just_in_time_script_localization() {
 	) );
 
 	wp_localize_script( 'mce-view', 'mceViewL10n', array(
-		'shortcodes' => ! empty( $GLOBALS['shortcode_tags'] ) ? array_keys( $GLOBALS['shortcode_tags'] ) : array()
+		'shortcodes-plugin' => ! empty( $GLOBALS['shortcode_tags'] ) ? array_keys( $GLOBALS['shortcode_tags'] ) : array()
 	) );
 
 	wp_localize_script( 'word-count', 'wordCountL10n', array(
@@ -1087,7 +1087,7 @@ function wp_just_in_time_script_localization() {
 		 * Do not translate into your own language.
 		 */
 		'type' => _x( 'words', 'Word count type. Do not translate!' ),
-		'shortcodes' => ! empty( $GLOBALS['shortcode_tags'] ) ? array_keys( $GLOBALS['shortcode_tags'] ) : array()
+		'shortcodes-plugin' => ! empty( $GLOBALS['shortcode_tags'] ) ? array_keys( $GLOBALS['shortcode_tags'] ) : array()
 	) );
 }
 

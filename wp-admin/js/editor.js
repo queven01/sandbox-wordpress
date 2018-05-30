@@ -259,9 +259,9 @@ window.wp = window.wp || {};
 		}
 
 		/**
-		 * Gets a list of unique shortcodes or shortcode-look-alikes in the content.
+		 * Gets a list of unique shortcodes-plugin or shortcode-look-alikes in the content.
 		 *
-		 * @param {string} content The content we want to scan for shortcodes.
+		 * @param {string} content The content we want to scan for shortcodes-plugin.
 		 */
 		function getShortcodesInText( content ) {
 			var shortcodes = content.match( /\[+([\w_-])+/g ),
@@ -281,9 +281,9 @@ window.wp = window.wp || {};
 		}
 
 		/**
-		 * @summary Get all shortcodes and their positions in the content
+		 * @summary Get all shortcodes-plugin and their positions in the content
 		 *
-		 * This function returns all the shortcodes that could be found in the textarea content
+		 * This function returns all the shortcodes-plugin that could be found in the textarea content
 		 * along with their character positions and boundaries.
 		 *
 		 * This is used to check if the selection cursor is inside the boundaries of a shortcode
@@ -294,7 +294,7 @@ window.wp = window.wp || {};
 		 * The information can also be used in other cases when we need to lookup shortcode data,
 		 * as it's already structured!
 		 *
-		 * @param {string} content The content we want to scan for shortcodes
+		 * @param {string} content The content we want to scan for shortcodes-plugin
 		 */
 		function getShortCodePositionsInText( content ) {
 			var allShortcodes = getShortcodesInText( content ), shortcodeInfo;
@@ -378,7 +378,7 @@ window.wp = window.wp || {};
 		}
 
 		/**
-		 * @summary Get adjusted selection cursor positions according to HTML tags/shortcodes
+		 * @summary Get adjusted selection cursor positions according to HTML tags/shortcodes-plugin
 		 *
 		 * Shortcodes and HTML codes are a bit of a special case when selecting, since they may render
 		 * content in Visual mode. If we insert selection markers somewhere inside them, it's really possible
@@ -692,7 +692,7 @@ window.wp = window.wp || {};
 			 *
 			 * TinyMCE's bookmarks are very nice when working with selections and positions, BUT
 			 * there is no way to determine the precise position of the bookmark when switching modes, since
-			 * TinyMCE does some serialization of the content, to fix things like shortcodes, run plugins, prettify
+			 * TinyMCE does some serialization of the content, to fix things like shortcodes-plugin, run plugins, prettify
 			 * HTML code and so on. In this process, the bookmark markup gets lost.
 			 *
 			 * If we decide to hook right after the bookmark is added, we can see where the bookmark is in the raw HTML
@@ -933,7 +933,7 @@ window.wp = window.wp || {};
 			html = html.replace( /\s*<div/g, '\n<div' );
 			html = html.replace( /<\/div>\s*/g, '</div>\n' );
 
-			// Fix line breaks around caption shortcodes.
+			// Fix line breaks around caption shortcodes-plugin.
 			html = html.replace( /\s*\[caption([^\[]+)\[\/caption\]\s*/gi, '\n\n[caption$1[/caption]\n\n' );
 			html = html.replace( /caption\]\n\n+\[caption/g, 'caption]\n\n[caption' );
 

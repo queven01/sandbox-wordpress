@@ -1,7 +1,7 @@
 <?php
 /**
  * WordPress API for creating bbcode-like tags or what WordPress calls
- * "shortcodes". The tag and attribute parsing or regular expression code is
+ * "shortcodes-plugin". The tag and attribute parsing or regular expression code is
  * based on the Textpattern tag parser.
  *
  * A few examples are below:
@@ -11,7 +11,7 @@
  * [shortcode foo="bar"]content[/shortcode]
  *
  * Shortcode tags support attributes and enclosed content, but does not entirely
- * support inline shortcodes in other shortcodes. You will have to call the
+ * support inline shortcodes-plugin in other shortcodes-plugin. You will have to call the
  * shortcode parser in your function to account for that.
  *
  * {@internal
@@ -95,11 +95,11 @@ function remove_shortcode($tag) {
 }
 
 /**
- * Clear all shortcodes.
+ * Clear all shortcodes-plugin.
  *
  * This function is simple, it clears all of the shortcode tags by replacing the
- * shortcodes global by a empty array. This is actually a very efficient method
- * for removing all shortcodes.
+ * shortcodes-plugin global by a empty array. This is actually a very efficient method
+ * for removing all shortcodes-plugin.
  *
  * @since 2.5.0
  *
@@ -133,7 +133,7 @@ function shortcode_exists( $tag ) {
  *
  * @global array $shortcode_tags
  *
- * @param string $content Content to search for shortcodes.
+ * @param string $content Content to search for shortcodes-plugin.
  * @param string $tag     Shortcode tag to check.
  * @return bool Whether the passed content contains the given shortcode.
  */
@@ -159,7 +159,7 @@ function has_shortcode( $content, $tag ) {
 }
 
 /**
- * Search content for shortcodes and filter shortcodes through their hooks.
+ * Search content for shortcodes-plugin and filter shortcodes-plugin through their hooks.
  *
  * If there are no shortcode tags defined, then the content will be returned
  * without any filtering. This might cause issues when plugins are disabled but
@@ -169,9 +169,9 @@ function has_shortcode( $content, $tag ) {
  *
  * @global array $shortcode_tags List of shortcode tags and their callback hooks.
  *
- * @param string $content Content to search for shortcodes.
- * @param bool $ignore_html When true, shortcodes inside HTML elements will be skipped.
- * @return string Content with shortcodes filtered out.
+ * @param string $content Content to search for shortcodes-plugin.
+ * @param bool $ignore_html When true, shortcodes-plugin inside HTML elements will be skipped.
+ * @return string Content with shortcodes-plugin filtered out.
  */
 function do_shortcode( $content, $ignore_html = false ) {
 	global $shortcode_tags;
@@ -210,19 +210,19 @@ function do_shortcode( $content, $ignore_html = false ) {
  *
  * The regular expression contains 6 different sub matches to help with parsing.
  *
- * 1 - An extra [ to allow for escaping shortcodes with double [[]]
+ * 1 - An extra [ to allow for escaping shortcodes-plugin with double [[]]
  * 2 - The shortcode name
  * 3 - The shortcode argument list
  * 4 - The self closing /
  * 5 - The content of a shortcode when it wraps some content.
- * 6 - An extra ] to allow for escaping shortcodes with double [[]]
+ * 6 - An extra ] to allow for escaping shortcodes-plugin with double [[]]
  *
  * @since 2.5.0
  * @since 4.4.0 Added the `$tagnames` parameter.
  *
  * @global array $shortcode_tags
  *
- * @param array $tagnames Optional. List of shortcodes to find. Defaults to all registered shortcodes.
+ * @param array $tagnames Optional. List of shortcodes-plugin to find. Defaults to all registered shortcodes-plugin.
  * @return string The shortcode search regular expression
  */
 function get_shortcode_regex( $tagnames = null ) {
@@ -237,7 +237,7 @@ function get_shortcode_regex( $tagnames = null ) {
 	// Also, see shortcode_unautop() and shortcode.js.
 	return
 		  '\\['                              // Opening bracket
-		. '(\\[?)'                           // 1: Optional second opening bracket for escaping shortcodes: [[tag]]
+		. '(\\[?)'                           // 1: Optional second opening bracket for escaping shortcodes-plugin: [[tag]]
 		. "($tagregexp)"                     // 2: Shortcode name
 		. '(?![\\w-])'                       // Not followed by word character or hyphen
 		. '('                                // 3: Unroll the loop: Inside the opening shortcode tag
@@ -263,7 +263,7 @@ function get_shortcode_regex( $tagnames = null ) {
 		.         '\\[\\/\\2\\]'             // Closing shortcode tag
 		.     ')?'
 		. ')'
-		. '(\\]?)';                          // 6: Optional second closing brocket for escaping shortcodes: [[tag]]
+		. '(\\]?)';                          // 6: Optional second closing brocket for escaping shortcodes-plugin: [[tag]]
 }
 
 /**
@@ -332,19 +332,19 @@ function do_shortcode_tag( $m ) {
 }
 
 /**
- * Search only inside HTML elements for shortcodes and process them.
+ * Search only inside HTML elements for shortcodes-plugin and process them.
  *
  * Any [ or ] characters remaining inside elements will be HTML encoded
- * to prevent interference with shortcodes that are outside the elements.
+ * to prevent interference with shortcodes-plugin that are outside the elements.
  * Assumes $content processed by KSES already.  Users with unfiltered_html
  * capability may get unexpected output if angle braces are nested in tags.
  *
  * @since 4.2.3
  *
- * @param string $content Content to search for shortcodes
+ * @param string $content Content to search for shortcodes-plugin
  * @param bool $ignore_html When true, all square braces inside elements will be encoded.
- * @param array $tagnames List of shortcodes to find.
- * @return string Content with shortcodes filtered out.
+ * @param array $tagnames List of shortcodes-plugin to find.
+ * @return string Content with shortcodes-plugin filtered out.
  */
 function do_shortcodes_in_html_tags( $content, $ignore_html, $tagnames ) {
 	// Normalize entities in unfiltered HTML before adding placeholders.
@@ -363,7 +363,7 @@ function do_shortcodes_in_html_tags( $content, $ignore_html, $tagnames ) {
 		$noopen = false === strpos( $element, '[' );
 		$noclose = false === strpos( $element, ']' );
 		if ( $noopen || $noclose ) {
-			// This element does not contain shortcodes.
+			// This element does not contain shortcodes-plugin.
 			if ( $noopen xor $noclose ) {
 				// Need to encode stray [ or ] chars.
 				$element = strtr( $element, $trans );
@@ -396,7 +396,7 @@ function do_shortcodes_in_html_tags( $content, $ignore_html, $tagnames ) {
 		preg_match('%[a-zA-Z0-9]+%', $front, $matches);
 		$elname = $matches[0];
 
-		// Look for shortcodes in each attribute separately.
+		// Look for shortcodes-plugin in each attribute separately.
 		foreach ( $attributes as &$attr ) {
 			$open = strpos( $attr, '[' );
 			$close = strpos( $attr, ']' );
@@ -413,7 +413,7 @@ function do_shortcodes_in_html_tags( $content, $ignore_html, $tagnames ) {
 				$attr = preg_replace_callback( "/$pattern/", 'do_shortcode_tag', $attr );
 			} else {
 				// $attr like 'name = "[shortcode]"' or "name = '[shortcode]'"
-				// We do not know if $content was unfiltered. Assume KSES ran before shortcodes.
+				// We do not know if $content was unfiltered. Assume KSES ran before shortcodes-plugin.
 				$count = 0;
 				$new_attr = preg_replace_callback( "/$pattern/", 'do_shortcode_tag', $attr, -1, $count );
 				if ( $count > 0 ) {
@@ -465,7 +465,7 @@ function get_shortcode_atts_regex() {
 }
 
 /**
- * Retrieve all attributes from the shortcodes tag.
+ * Retrieve all attributes from the shortcodes-plugin tag.
  *
  * The attributes list has the attribute name as the key and the value of the
  * attribute as the value in the key/value pair. This allows for easier
@@ -591,7 +591,7 @@ function strip_shortcodes( $content ) {
 	 * @since 4.7.0
 	 *
 	 * @param array  $tag_array Array of shortcode tags to remove.
-	 * @param string $content   Content shortcodes are being removed from.
+	 * @param string $content   Content shortcodes-plugin are being removed from.
 	 */
 	$tags_to_remove = apply_filters( 'strip_shortcodes_tagnames', $tags_to_remove, $content );
 

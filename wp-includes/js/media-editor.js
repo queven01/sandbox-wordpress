@@ -426,7 +426,7 @@
 					_.extend( attrs, attachments[this.tag].toJSON() );
 				}
 
-				// Convert all gallery shortcodes to use the `ids` property.
+				// Convert all gallery shortcodes-plugin to use the `ids` property.
 				// Ignore `post__in` and `post__not_in`; the attachments in
 				// the collection will already reflect those properties.
 				attrs.ids = attachments.pluck('id');

@@ -3792,8 +3792,8 @@ msgstr "http://www.elliotcondon.com/"
 #~ msgid "Run filter \"the_content\"?"
 #~ msgstr "Gebruik filter \"the_content\"?"
 
-#~ msgid "Enable this filter to use shortcodes within the WYSIWYG field"
-#~ msgstr "Activeer dit filter om shortcodes te gebruiken in het WYSIWYG veld"
+#~ msgid "Enable this filter to use shortcodes-plugin within the WYSIWYG field"
+#~ msgstr "Activeer dit filter om shortcodes-plugin te gebruiken in het WYSIWYG veld"
 
 #~ msgid ""
 #~ "This format will determin the value saved to the database and returned "

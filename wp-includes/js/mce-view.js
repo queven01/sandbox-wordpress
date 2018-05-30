@@ -158,7 +158,7 @@
 				instance;
 
 			if ( text.indexOf( '[' ) !== -1 && text.indexOf( ']' ) !== -1 ) {
-				// Looks like a shortcode? Remove any line breaks from inside of shortcodes
+				// Looks like a shortcode? Remove any line breaks from inside of shortcodes-plugin
 				// or autop will replace them with <p> and <br> later and the string won't match.
 				text = text.replace( /\[[^\]]+\]/g, function( match ) {
 					return match.replace( /[\r\n]/g, '' );
@@ -763,7 +763,7 @@
 
 /*
  * The WordPress core TinyMCE views.
- * Views for the gallery, audio, video, playlist and embed shortcodes,
+ * Views for the gallery, audio, video, playlist and embed shortcodes-plugin,
  * and a view for embeddable URLs.
  */
 ( function( window, views, media, $ ) {

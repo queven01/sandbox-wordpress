@@ -213,7 +213,7 @@ function wptexturize( $text, $reset = false ) {
 	 */
 	$no_texturize_tags = apply_filters( 'no_texturize_tags', $default_no_texturize_tags );
 	/**
-	 * Filters the list of shortcodes not to texturize.
+	 * Filters the list of shortcodes-plugin not to texturize.
 	 *
 	 * @since 2.8.0
 	 *
@@ -224,7 +224,7 @@ function wptexturize( $text, $reset = false ) {
 	$no_texturize_tags_stack = array();
 	$no_texturize_shortcodes_stack = array();
 
-	// Look for shortcodes and HTML elements.
+	// Look for shortcodes-plugin and HTML elements.
 
 	preg_match_all( '@\[/?([^<>&/\[\]\x00-\x20=]++)@', $text, $matches );
 	$tagnames = array_intersect( array_keys( $shortcode_tags ), $matches[1] );
@@ -661,7 +661,7 @@ function get_html_split_regex() {
 }
 
 /**
- * Retrieve the combined regular expression for HTML and shortcodes.
+ * Retrieve the combined regular expression for HTML and shortcodes-plugin.
  *
  * @access private
  * @ignore
@@ -704,14 +704,14 @@ function _get_wptexturize_split_regex( $shortcode_regex = '' ) {
 }
 
 /**
- * Retrieve the regular expression for shortcodes.
+ * Retrieve the regular expression for shortcodes-plugin.
  *
  * @access private
  * @ignore
  * @internal This function will be removed in 4.5.0 per Shortcode API Roadmap.
  * @since 4.4.0
  *
- * @param array $tagnames List of shortcodes to find.
+ * @param array $tagnames List of shortcodes-plugin to find.
  * @return string The regular expression
  */
 function _get_wptexturize_shortcode_regex( $tagnames ) {
@@ -720,9 +720,9 @@ function _get_wptexturize_shortcode_regex( $tagnames ) {
 	$regex =
 		  '\['              // Find start of shortcode.
 		. '[\/\[]?'         // Shortcodes may begin with [/ or [[
-		. $tagregexp        // Only match registered shortcodes, because performance.
+		. $tagregexp        // Only match registered shortcodes-plugin, because performance.
 		. '(?:'
-		.     '[^\[\]<>]+'  // Shortcodes do not contain other shortcodes. Quantifier critical.
+		.     '[^\[\]<>]+'  // Shortcodes do not contain other shortcodes-plugin. Quantifier critical.
 		. '|'
 		.     '<[^\[\]>]*>' // HTML elements permitted. Prevents matching ] before >.
 		. ')*+'             // Possessive critical.
@@ -796,9 +796,9 @@ function _autop_newline_preservation_helper( $matches ) {
 }
 
 /**
- * Don't auto-p wrap shortcodes that stand alone
+ * Don't auto-p wrap shortcodes-plugin that stand alone
  *
- * Ensures that shortcodes are not wrapped in `<p>...</p>`.
+ * Ensures that shortcodes-plugin are not wrapped in `<p>...</p>`.
  *
  * @since 2.9.0
  *
