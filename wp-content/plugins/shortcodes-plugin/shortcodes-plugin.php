@@ -56,7 +56,7 @@ function user_shortcode_page()
 	        <label for="shortcode_name">Creator</label>
 	        <input type="text" name="creator_name" class="large-text" value="<?php print $shortcode_creator_name; ?>">
 	        <label for="shortcode_input">Add Your Code Here</label>
-	        <textarea class="large-text" name="shortcode_input" id="short-code-creator" cols="30" rows="15"><?php print $shortcode; ?></textarea>
+	        <textarea class="large-text" name="shortcode_input" id="short-code-creator" cols="30" rows="15"><?php echo stripslashes($shortcode); ?></textarea>
 	        <input type="submit" name="submit_shortcode_update" value="Submit Shortcode" class="button-primary">
         </form>
     </div>
