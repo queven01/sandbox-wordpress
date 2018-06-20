@@ -13,7 +13,7 @@
         echo '<div class="container">';
     endif; ?>
 
-    <div class="carousel-section <?php echo $add_class; ?>" style="padding: <?php echo $padding; ?>;">
+    <div class="carousel-section <?php echo $add_class; ?>" style="z-index: 1; position: relative; padding: <?php echo $padding; ?>;">
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
