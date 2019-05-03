@@ -1,5 +1,4 @@
 <?php if( get_row_layout() == 'hero' ):
-
 	//Variables
     while ( have_rows('text_input') ) : the_row();
         $enable_editor = get_sub_field('enable_custom_editor');

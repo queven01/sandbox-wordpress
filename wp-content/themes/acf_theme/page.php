@@ -18,5 +18,6 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
+PAGES?
 <?php
 get_footer();

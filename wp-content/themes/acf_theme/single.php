@@ -30,6 +30,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+SINGLE PAGE
+
 <?php
 get_sidebar();
 get_footer();

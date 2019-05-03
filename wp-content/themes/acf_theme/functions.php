@@ -45,6 +45,7 @@ if ( ! function_exists( 'acf_theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'acf_theme' ),
+            'media-library' => esc_html__( 'Media Library Menu', 'acf_theme' ),
 		) );
 
 		/*
@@ -110,6 +111,16 @@ function acf_theme_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+    register_sidebar( array(
+        'name'          => esc_html__( 'Topbar', 'acf_theme' ),
+        'id'            => 'topbar-1',
+        'description'   => esc_html__( 'Add widgets here.', 'acf_theme' ),
+        'before_widget' => '<div class="col-md-2"><section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section></div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'acf_theme_widgets_init' );
 
@@ -120,6 +131,8 @@ function acf_theme_scripts() {
 	wp_enqueue_style( 'acf_theme-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'acf_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
+    wp_enqueue_script( 'graphics-menu-effects', get_template_directory_uri() . '/js/graphics-menu.js', array(), true );
 
 	wp_enqueue_script( 'acf_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -325,7 +338,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 
 /**
- * Customizer additions.
+ * Customizer additions.∂
  */
 require get_template_directory() . '/inc/customizer.php';
 
@@ -336,3 +349,118 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function cptui_register_my_cpts() {
+
+    /**
+     * Post Type: Website Slide.
+     */
+
+    $labels = array(
+        "name" => __( "Website Slide", "acf_theme" ),
+        "singular_name" => __( "Website Slides", "acf_theme" ),
+    );
+
+    $args = array(
+        "label" => __( "Website Slide", "acf_theme" ),
+        "labels" => $labels,
+        "description" => "This has all the slides",
+        "public" => true,
+        "publicly_queryable" => true,
+        "show_ui" => true,
+        "delete_with_user" => false,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "rest_controller_class" => "WP_REST_Posts_Controller",
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array( "slug" => "website_slide", "with_front" => true ),
+        "query_var" => true,
+        "supports" => array( "title", "editor", "thumbnail" ),
+    );
+
+    register_post_type( "website_slide", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts' );
+
+
+class MyNewWidget extends WP_Widget {
+
+    function __construct() {
+        // Instantiate the parent object
+
+        $widget_options = array(
+            'classname' => 'example_widget',
+            'description' => 'This is an Example Widget',
+        );
+        parent::__construct( 'example_widget', 'Example Widget', $widget_options );
+    }
+
+    function widget( $args, $instance ) {
+        // Widget output
+
+        $title = apply_filters( 'widget_title', $instance[ 'title' ] );
+        $blog_title = get_bloginfo( 'name' );
+        $tagline = get_bloginfo( 'description' );
+        echo $args['before_widget'] . $args['before_title'] . $title . $args['after_title']; ?>
+
+	    <p><strong>Site Name:</strong> <?php echo $blog_title ?></p>
+	    <p><strong>Tagline:</strong> <?php echo $tagline ?></p>
+
+        <?php echo $args['after_widget'];
+    }
+
+    function form( $instance ) {
+        // Output admin widget options form
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : ''; ?>
+	    <p>
+	    <label for="<?php echo $this->get_field_id( 'title' ); ?>">Title:</label>
+	    <input type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $title ); ?>" />
+	    </p><?php
+    }
+
+    function update( $new_instance, $old_instance ) {
+        // Save widget options
+        $instance = $old_instance;
+        $instance[ 'title' ] = strip_tags( $new_instance[ 'title' ] );
+        return $instance;
+
+    }
+}
+
+function myplugin_register_widgets() {
+    register_widget( 'MyNewWidget' );
+}
+
+add_action( 'widgets_init', 'myplugin_register_widgets' );
+
+
+/**
+ * Generate breadcrumbs
+ * @author CodexWorld
+ * @authorURL www.codexworld.com
+ */
+function get_breadcrumb() {
+    echo '<a href="' . get_permalink( get_option('page_for_posts' )) . '" rel="nofollow">Media Library</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        the_category(' &bull; ');
+        if (is_single()) {
+            echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+            the_title();
+        }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+}
